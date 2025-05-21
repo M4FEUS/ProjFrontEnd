@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', Arial, sans-serif;
+    text-decoration: none;
+}
+
+:root {
+    --azul-tutoriae: #0d2c46;
+    --laranja-tutoriae: #df8638;
+    --bege-tutoriae: #f8ece0;
+    --azul-claro-tutoriae: #c1d4e5;
+    --cinza-gelo-tutoriae: #e6e7eb;
+    --cinza-medio-tutoriae: #b1b4bb;
+    --cinza-escuro-tutoriae: #151718;
+}
+
+body {
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: repeating-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/Assets/grupo-de-estudos.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+
+    width: 100%;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+}
+
+.container {
+    width: 40%;
+    max-width: 1000px;
+    min-width: 500px;
+    min-height: 300px;
+    margin: auto;
+    padding: 2rem;
+    background-color: rgba(256, 256, 256, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container h1 {
+    color: var(--azul-tutoriae);
+    margin-bottom: 1rem;
+}
+
+.container p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: small;
+}
+
+.container p a {
+    color: #0d2c46;
+}
+
+.container p a:hover {
+    color: var(--laranja-tutoriae);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+form > input {
+    height: 1.5rem;
+    border-radius: 0.4rem;
+    border: none;
+    padding: 0.5rem;
+}
+
+button {
+    color: #FFF;
+    background-color: var(--azul-tutoriae);
+    opacity: 0.8;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+
+    transition: ease 0.4s;
+    margin: 1rem 0;
+}
+
+button:hover {
+    background-color: var(--laranja-tutoriae);
+    color: var(--azul-tutoriae);
+}
+
+footer {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.3rem;
+
+    background-color: var(--azul-tutoriae);
+    opacity: 0.9;
+    color: #FFF;
+    margin-top: auto;
+}

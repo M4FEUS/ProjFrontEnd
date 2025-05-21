@@ -160,24 +160,13 @@ button:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
 
-.expertise-direita, .expertise-esquerda {
+.expertise-direita, .expertise-meio, .expertise-esquerda {
     display: flex;
-    flex-direction: column;
-}
-
-footer {
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem;
-
-    background-color: var(--azul-tutoriae);
-    opacity: 0.9;
-    color: #FFF;
-    margin-top: auto;
+    gap: 1rem;
 }
 
 footer {

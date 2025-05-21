@@ -6,50 +6,64 @@
     <title>Tutoriaê - Cadastro</title>
 
     <!-- links -->
-    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/cadastro.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="Assets/logos/logo-tutoriae.png">
 
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <header>
+        <img src="Assets/logos/logo-tutoriae-text.png" alt="" width="150">
+    </header>
+
     <main>
+        <div class="logo">
+            <img src="Assets/logos/logo-tutoriae-fundo-azul.jpg" alt="" width="400">
+        </div>
+
         <div class="container">
             <h1>Cadastre-se como voluntário</h1>
             <form action="login.html" method="GET">
                 <label for="nome">Nome completo:</label>
-                <input type="text" id="nome" name="nome" required>
+                <input type="text" id="nome" name="nome" placeholder="nome completo" required>
 
                 <label for="email">E-mail:</label>
-                <input type="email" id="email" name="email" required>
+                <input type="email" id="email" name="email" placeholder="email@email.com" required>
 
                 <label for="senha">Senha:</label>
                 <input type="password" id="senha" name="senha" required>
 
                 <label for="expertise">Área de expertise:</label>
                 <select id="expertise" name="expertise" required>
-                    <option value="matematica">Matemática</option>
-                    <option value="biologia">Biologia</option>
-                    <option value="Portugues">Portugues</option>
-                    <option value="redação">Redação</option>
                     <option value="Artes">Artes</option>
-                    <option value="Lingua-estrangeira">Lingua-estrangeira</option>
-                    <option value="Geografia">Geografia</option>
-                    <option value="Sociologia">Sociologia</option>
-                    <option value="História">História</option>
+                    <option value="biologia">Biologia</option>
                     <option value="Filosofia">Filosofia</option>
-                    <option value="Quimica">Quimica</option>
                     <option value="Física">Física</option>
+                    <option value="Geografia">Geografia</option>
+                    <option value="História">História</option>
+                    <option value="Lingua-estrangeira">Lingua-estrangeira</option>
+                    <option value="matematica">Matemática</option>
+                    <option value="Portugues">Portugues</option>
+                    <option value="Quimica">Quimica</option>
+                    <option value="redação">Redação</option>
+                    <option value="Sociologia">Sociologia</option>
                 </select>
 
                 <label for="telefone">Telefone:</label>
-                <input type="tel" id="telefone" name="telefone" required>
+                <input type="tel" id="telefone" name="telefone" placeholder="(99) 99999-9999" required>
 
                 <button type="submit">Enviar</button>
             </form>
-            <p>Já tem conta? <a href="login.html">Faça login</a></p>
-            <p>Quero ser estudante!! <a href="cadastroestu.html">Se cadastre</a></p>
+            <div id="cadastro">
+                <p>Já tem conta? <a href="login.html">Faça login</a></p>
+                <p>Quero ser estudante! <a href="cadastroestu.html">Cadastre-se</a></p>
+            </div>
         </div>
     </main>
+    
+    <footer>
+        <p>© 2025 Tutoriaê</p>
+    </footer>
 </body>
 </html>

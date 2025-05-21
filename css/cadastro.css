@@ -126,6 +126,17 @@ button:hover {
     gap: 1rem;
 }
 
+.expertise {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.expertise-direita, .expertise-esquerda {
+    display: flex;
+    flex-direction: column;
+}
+
 footer {
     width: 100vw;
     display: flex;

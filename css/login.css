@@ -33,6 +33,32 @@ header {
     height: auto;
     background-color: var(--azul-tutoriae);
     padding: 0.8rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+header li {
+    list-style-type: none;
+}
+
+header li a {
+    color: #FFF;
+}
+
+header li a:hover {
+    color: var(--laranja-tutoriae);
+    text-decoration: underline;
+
+    transition: ease 0.4s;
 }
 
 main {
@@ -40,6 +66,8 @@ main {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+
+    margin: 1rem 0;
 
     width: 100%;
 }

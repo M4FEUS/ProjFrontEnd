@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutoriaê - Cadastro</title>
+  
+    <!-- links -->
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="Assets/logos/logo-tutoriae.png">
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <img src="Assets/logos/logo-tutoriae-text.png" alt="" width="150">
+        
+        <div class="nav-cadastro">
+            <ul>
+                <li><a href="cadastro-voluntario.html">Voluntário</a></li>
+                <li><a href="cadastro-estudante.html">Estudante</a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <h1>Cadastre-se como Estudante</h1>
+            <form action="index.html" method="GET">
+                <label for="nome">Nome Completo:</label>
+                <input type="text" id="nome" name="nome" placeholder="Nome Completo" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="email@email.com" required>
+
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha" placeholder="Senha" required>
+
+                <label for="expertise">Áreas de interesse:</label>
+                <!-- <div class="expertise">
+                    <div class="expertise-esquerda">
+                        <input type="checkbox" name="expertise" id="expertise" value="artes"> Artes
+                        <input type="checkbox" name="expertise" id="expertise" value="biologia"> Biologia
+                        <input type="checkbox" name="expertise" id="expertise" value="filosofia">  Filosofia
+                        <input type="checkbox" name="expertise" id="expertise" value="fisica"> Física
+                        <input type="checkbox" name="expertise" id="expertise" value="geografia"> Geografia
+                        <input type="checkbox" name="expertise" id="expertise" value="historia"> História
+                    </div>
+                    <div class="expertise-direita">
+                        <input type="checkbox" name="expertise" id="expertise" value="lingua-estrangeira"> Língua Estrangeira
+                        <input type="checkbox" name="expertise" id="expertise" value="matematica"> Matemática
+                        <input type="checkbox" name="expertise" id="expertise" value="portugues"> Português
+                        <input type="checkbox" name="expertise" id="expertise" value="quimica"> Química
+                        <input type="checkbox" name="expertise" id="expertise" value="redacao"> Redação
+                        <input type="checkbox" name="expertise" id="expertise" value="sociologia"> Sociologia
+                    </div>
+                </div> -->
+
+                    <select id="expertise" name="expertise" required>
+                        <option value="Artes">Artes</option>
+                        <option value="biologia">Biologia</option>
+                        <option value="Filosofia">Filosofia</option>
+                        <option value="Física">Física</option>
+                        <option value="Geografia">Geografia</option>
+                        <option value="História">História</option>
+                        <option value="Lingua-estrangeira">Lingua-estrangeira</option>
+                        <option value="matematica">Matemática</option>
+                        <option value="Portugues">Portugues</option>
+                        <option value="Quimica">Quimica</option>
+                        <option value="redação">Redação</option>
+                        <option value="Sociologia">Sociologia</option>
+                    </select>
+
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" placeholder="(99) 99999-9999" required>
+
+                <button type="submit">Enviar</button>
+            </form>
+
+            <div class="cadastro">
+                <p>Já tem conta? <a href="index.html">Faça login</a></p>
+                <p>Quero ser voluntário! <a href="cadastro-voluntario.html">Cadastre-se</a></p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2025 Tutoriaê</p>
+    </footer>
+</body>
+</html>

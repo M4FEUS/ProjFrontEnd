@@ -39,28 +39,6 @@ header {
     align-items: center;
 }
 
-header ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 3rem;
-}
-
-header li {
-    list-style-type: none;
-}
-
-header li a {
-    color: #FFF;
-}
-
-header li a:hover {
-    color: var(--laranja-tutoriae);
-    text-decoration: underline;
-
-    transition: ease 0.4s;
-}
-
 main {
     flex-grow: 1;
     display: flex;

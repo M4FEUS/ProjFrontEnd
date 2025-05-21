@@ -3,22 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tutoriaê - Cadastro</title>
+    <title>Tutoriaê - Cadastro de Voluntário</title>
 
     <!-- links -->
     <link rel="stylesheet" href="css/cadastro.css">
-    <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="Assets/logos/logo-tutoriae.png">
 
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <img src="Assets/logos/logo-tutoriae-text.png" alt="" width="150">
+        <a href="index.html"><img src="Assets/logos/logo-tutoriae-text.png" alt="" width="150"></a>
         
         <div class="nav-cadastro">
             <ul>
-                <li><a href="cadastro-voluntario.html">Voluntário</a></li>
+                <li class="pagina-atual" href="cadastro-voluntario.html">Voluntário</li>
                 <li><a href="cadastro-estudante.html">Estudante</a></li>
             </ul>
         </div>
@@ -30,7 +29,7 @@
         </div>
 
         <div class="container">
-            <h1>Cadastre-se como voluntário</h1>
+            <h1>Cadastre-se como <span style="color:  var(--laranja-tutoriae)">Voluntário</span></h1>
             <form action="login.html" method="GET">
                 <label for="nome">Nome Completo:</label>
                 <input type="text" id="nome" name="nome" placeholder="Nome Completo" required>
@@ -39,7 +38,7 @@
                 <input type="email" id="email" name="email" placeholder="email@email.com" required>
 
                 <label for="senha">Senha:</label>
-                <input type="password" id="senha" name="senha" required>
+                <input type="password" id="senha" name="senha" placeholder="senha" required>
 
                 <label for="expertise">Área de expertise:</label>
                 <select id="expertise" name="expertise" required>
@@ -63,8 +62,8 @@
                 <button type="submit">Enviar</button>
             </form>
             <div id="cadastro">
-                <p>Já tem conta? <a href="index.html">Faça login</a></p>
-                <p>Quero ser estudante! <a href="cadastro-estudante.html">Cadastre-se</a></p>
+                <p class="cad-login">Já tem conta? <a href="index.html">Faça login</a></p>
+                <p class="cad-cad">Quero ser estudante! <a href="cadastro-estudante.html">Cadastre-se</a></p>
             </div>
         </div>
     </main>

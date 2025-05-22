@@ -431,7 +431,7 @@ main {
 
 /*DUVIDAS*/
 #duvidas-estudantes {
-    background-color: var(--azul-claro-tutoriae);
+    background-color: #fff;
 
     padding: 2rem;
 }

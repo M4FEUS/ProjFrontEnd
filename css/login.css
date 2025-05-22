@@ -28,6 +28,8 @@ body {
     background-size: cover;
 }
 
+
+/*HEADER*/
 header {
     width: 100vw;
     height: auto;
@@ -39,6 +41,8 @@ header {
     align-items: center;
 }
 
+
+/*MAIN*/
 main {
     flex-grow: 1;
     display: flex;
@@ -61,6 +65,20 @@ main {
     
 }
 
+
+/*FORMULÁRIO*/
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+form > input {
+    height: 1.5rem;
+    border-radius: 0.4rem;
+    border: none;
+    padding: 0.5rem;
+}
 
 .container {
     width: 40%;
@@ -106,19 +124,6 @@ main {
     color: var(--laranja-tutoriae);
 }
 
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-}
-
-form > input {
-    height: 1.5rem;
-    border-radius: 0.4rem;
-    border: none;
-    padding: 0.5rem;
-}
-
 button {
     color: #FFF;
     background-color: var(--azul-tutoriae);
@@ -138,6 +143,7 @@ button:hover {
 }
 
 
+/*FOOTER*/
 footer {
     width: 100vw;
     display: flex;

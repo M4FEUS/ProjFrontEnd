@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', Arial, sans-serif;
+    text-decoration: none;
+}
+
+:root {
+    --azul-tutoriae: #0d2c46;
+    --laranja-tutoriae: #df8638;
+    --bege-tutoriae: #f8ece0;
+    --azul-claro-tutoriae: #c1d4e5;
+    --cinza-gelo-tutoriae: #e6e7eb;
+    --cinza-medio-tutoriae: #b1b4bb;
+    --cinza-escuro-tutoriae: #151718;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--cinza-medio-tutoriae);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/*HEADER*/
+header {
+    width: 100%;
+    height: auto;
+    background-color: var(--azul-tutoriae);
+    padding: 0.65rem 1rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header a {
+    color: #FFF;
+}
+
+header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+header li {
+    list-style-type: none;
+}
+
+header li a {
+    color: #FFF;
+    opacity: 0.7;
+}
+
+header li a:hover {
+    opacity: 1;
+    color: var(--laranja-tutoriae);
+    text-decoration: underline;
+    transition: ease 0.4s;
+}
+
+.pagina-atual {
+    color: #FFF;
+    opacity: 1;
+}
+
+.icons-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.icons-header-search, .icons-header-user{
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    min-width: 10rem;
+    right: 0;
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.2);
+    z-index: 4;
+    background-color: var(--azul-tutoriae);
+    opacity: 0.8;
+}
+
+.dropdown a {
+    color: #FFF;
+    opacity: 1;
+    display: block;
+    padding: 0.2em
+}
+
+.dropdown a:hover {
+    background-color: var(--azul-claro-tutoriae);
+    color: var(--azul-tutoriae);
+    opacity: 1;
+}
+
+.icons-header-search:hover .dropdown {
+    display: block;
+}
+
+

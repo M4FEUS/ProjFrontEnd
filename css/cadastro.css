@@ -27,6 +27,8 @@ body {
     background-size: cover;
 }
 
+
+/*HEADER*/
 header {
     width: 100%;
     height: auto;
@@ -70,6 +72,8 @@ header li a:hover {
     opacity: 1;
 }
 
+
+/*MAIN*/
 main {
     flex-grow: 1;
     display: flex;
@@ -92,6 +96,24 @@ main {
     border: 7px solid var(--cinza-gelo-tutoriae);
 }
 
+
+/*FORMULÁRIO*/
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+form > input {
+    height: 1.5rem;
+    border-radius: 0.4rem;
+    border: none;
+    padding: 0.5rem;
+}
+
+form h4 {
+    font-weight: 200;
+}
 
 .container {
     width: 40%;
@@ -140,23 +162,6 @@ main {
     transition: ease 0.3s;
 }
 
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-}
-
-form > input {
-    height: 1.5rem;
-    border-radius: 0.4rem;
-    border: none;
-    padding: 0.5rem;
-}
-
-form h4 {
-    font-weight: 200;
-}
-
 .expertise-disciplina {
     font-size: 0.9rem;
 }
@@ -193,6 +198,8 @@ button:hover {
     gap: 1rem;
 }
 
+
+/*FOOTER*/
 footer {
     width: 100%;
     display: flex;

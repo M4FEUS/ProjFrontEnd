@@ -1,97 +1,140 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tutoriaê - Nossos cursos</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto&display=swap" rel="stylesheet">
+    <title>Tutoriaê - Nossos Cursos</title>
+
+    <!-- links -->
+    <link rel="stylesheet" href="css/nossos-cursos.css">
+    <link rel="shortcut icon" href="Assets/logos/logo-tutoriae.png">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
+
 <body>
     <header>
-        <img src="Assets/Login.png" alt="Logo Tutoriaê">
-        <nav>
+        <a href="home.html"><img src="Assets/logos/logo-tutoriae-header.png" alt="Logo Tutoriaê" width="150"></a>
+        <nav class="nav-header">
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="nossos-cursos.html">Nossos cursos</a></li>
-                <li><a href="quem-somos.html">Quem somos</a></li>
-                <li><a href="login.html">Login</a></li>
-                <li><a href="cadastro-voluntario.html">Cadastre-se</a></li>
+                <li><a href="home.html">Home</a></li>
+                <li class="pagina-atual">Nossos Cursos</a></li>
+                <li><a href="quem-somos.html">Quem Somos</a></li>
             </ul>
         </nav>
+
+        <div class="icons-header">
+            <div class="icons-header-search">
+                <a href=""><i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i></a>
+                <div class="dropdown">
+                    <a href="nossos-cursos.html#artes">Artes</a>
+                    <a href="nossos-cursos.html#biologia">Biologia</a>
+                    <a href="nossos-cursos.html#filosofia">Filosofia</a>
+                    <a href="nossos-cursos.html#fisica">Física</a>
+                    <a href="nossos-cursos.html#geografia">Geografia</a>
+                    <a href="nossos-cursos.html#historia">História</a>
+                    <a href="nossos-cursos.html#estrangeira">Língua Estrangeira</a>
+                    <a href="nossos-cursos.html#matematica">Matemática</a>
+                    <a href="nossos-cursos.html#portugues">Português</a>
+                    <a href="nossos-cursos.html#quimica">Química</a>
+                    <a href="nossos-cursos.html#redacao">Redação</a>
+                    <a href="nossos-cursos.html#sociologia">Sociologia</a>
+                </div>
+            </div>
+
+            <div class="icons-header-search">
+                <a href=""><i class="fa-solid fa-user" style="color: #ffffff;"></i></a>
+                <div class="dropdown">
+                    <a href="">user</a>
+                    <a href="">(Estudante ou Voluntário)</a>
+                    <a href="index.html" style="color: var(--laranja-tutoriae);">Sair</a>
+                </div>
+            </div>
+        </div>
     </header>
-<main>
-<section>
-     <h1>Encontre os cursos que mais te interresam!!</h1>
-        <div class="container-opcao"> 
-            <img class="curso-opcao" src="Assets/redacao.webp" alt="redacao" style="width: 300px; height: 200px;">
-             <h4 class="Titulo">Aprenda redação</h4>
-        </div>
+    <main>
+        <section>
+            <h1>Encontre os cursos que mais te interresam!!</h1>
+            <div class="container-opcao">
+                <img class="curso-opcao" src="Assets/redacao.webp" alt="redacao" style="width: 300px; height: 200px;">
+                <h4 class="Titulo">Aprenda redação</h4>
+            </div>
 
-        <div class="container-opcao">
-            <img class="curso-opcao" src="Assets/humanas.webp" alt="humanas">
-             <h4 class="Titulo">Aprenda Humanas 1 dia</h4>
-        </div>
+            <div class="container-opcao">
+                <img class="curso-opcao" src="Assets/humanas.webp" alt="humanas">
+                <h4 class="Titulo">Aprenda Humanas 1 dia</h4>
+            </div>
 
-        <div class="container-opcao">
-            <img class="curso-opcao" src="Assets/matematica.webp" alt="matematica">
-             <h4 class="Titulo">Aprenda matemática 2 dia</h4>
-        </div>
-</section>
+            <div class="container-opcao">
+                <img class="curso-opcao" src="Assets/matematica.webp" alt="matematica">
+                <h4 class="Titulo">Aprenda matemática 2 dia</h4>
+            </div>
+        </section>
 
-<section>
-  <h1>Alguns dos nossos cursos que oferecemos a você!!</h1>
-    <div class="container-cursos">
-        <img class="cursos-opcao-1" src="Assets/organiza1.jpg" alt="organizar">
-    <div class="curso-descricao">
-            <h4>Gestão de Tempo e Rotina para Estudantes</h4>
-                <p>Aprenda técnicas de organização, planejamento semanal e uso de ferramentas como cronograma de estudos, métodos Pomodoro e mapas de produtividade.</p>
-    </div>
-</div>
+        <section>
+            <h1>Alguns dos nossos cursos que oferecemos a você!!</h1>
+            <div class="container-cursos">
+                <img class="cursos-opcao-1" src="Assets/organiza1.jpg" alt="organizar">
+                <div class="curso-descricao">
+                    <h4>Gestão de Tempo e Rotina para Estudantes</h4>
+                    <p>Aprenda técnicas de organização, planejamento semanal e uso de ferramentas como cronograma de
+                        estudos, métodos Pomodoro e mapas de produtividade.</p>
+                </div>
+            </div>
 
- <div class="container-cursos">
-        <img class="cursos-opcao-1" src="Assets/portugues.avif" alt="linguagens">
-    <div class="curso-descricao">
-            <h4>Interpretação de Textos e Linguagens</h4>
-                <p>Desenvolva habilidades de leitura crítica e interpretação textual. Curso voltado para textos literários, publicitários, gráficos e linguagem verbal-não verbal.</p>
-    </div>
-</div>
+            <div class="container-cursos">
+                <img class="cursos-opcao-1" src="Assets/portugues.avif" alt="linguagens">
+                <div class="curso-descricao">
+                    <h4>Interpretação de Textos e Linguagens</h4>
+                    <p>Desenvolva habilidades de leitura crítica e interpretação textual. Curso voltado para textos
+                        literários, publicitários, gráficos e linguagem verbal-não verbal.</p>
+                </div>
+            </div>
 
-<div class="container-cursos">
-        <img class="cursos-opcao-1" src="Assets/fisica.webp" alt="fisica">
-    <div class="curso-descricao">
-            <h4>Ciências da Natureza Descomplicadas</h4>
-                <p>Curso completo de Química, Física e Biologia com foco no estilo do ENEM. Entenda os conceitos e resolva questões com interpretação e aplicação prática.</p>
-    </div>
-</div>
+            <div class="container-cursos">
+                <img class="cursos-opcao-1" src="Assets/fisica.webp" alt="fisica">
+                <div class="curso-descricao">
+                    <h4>Ciências da Natureza Descomplicadas</h4>
+                    <p>Curso completo de Química, Física e Biologia com foco no estilo do ENEM. Entenda os conceitos e
+                        resolva questões com interpretação e aplicação prática.</p>
+                </div>
+            </div>
 
-<div class="container-cursos">
-        <img class="cursos-opcao-1" src="Assets/ansiedade.jpg" alt="ansiedade">
-    <div class="curso-descricao">
-            <h4>Controle Emocional e Ansiedade na Preparação</h4>
-                <p> Curso voltado para o bem-estar emocional do estudante, com estratégias de autocontrole, respiração, mindfulness e foco durante os estudos e provas.</p>
-    </div>
-</div>
+            <div id="artes">
+                <img src="Assets/logos/download-Photoroom2.png" alt="">
+            </div>
 
-<div class="container-cursos">
-        <img class="cursos-opcao-1" src="Assets/redacao-icone.jpg" alt="redacao-icone">
-    <div class="curso-descricao">
-            <h4>Domine a Redação ENEM</h4>
-                <p> Aprenda a estruturar uma redação nota 1000 com técnicas de argumentação, coesão e repertório sociocultural. Aulas práticas com correções detalhadas.</p>
-    </div>
-</div>
+            <div class="container-cursos">
+                <img class="cursos-opcao-1" src="Assets/ansiedade.jpg" alt="ansiedade">
+                <div class="curso-descricao">
+                    <h4>Controle Emocional e Ansiedade na Preparação</h4>
+                    <p> Curso voltado para o bem-estar emocional do estudante, com estratégias de autocontrole,
+                        respiração, mindfulness e foco durante os estudos e provas.</p>
+                </div>
+            </div>
 
-<div class="container-cursos">
-        <img class="cursos-opcao-1" src="Assets/revisao.jpg" alt="revisao">
-    <div class="curso-descricao">
-            <h4>Trilha ENEM Intensiva (Reta Final)</h4>
-                <p>Revisão intensiva com os conteúdos mais cobrados, simulados comentados, mapas mentais e dicas para manter o foco e a estratégia na reta final da preparação.</p>
-    </div>
-</div>
-</section>
-</main>
-<footer>
+            <div class="container-cursos">
+                <img class="cursos-opcao-1" src="Assets/redacao-icone.jpg" alt="redacao-icone">
+                <div class="curso-descricao">
+                    <h4>Domine a Redação ENEM</h4>
+                    <p> Aprenda a estruturar uma redação nota 1000 com técnicas de argumentação, coesão e repertório
+                        sociocultural. Aulas práticas com correções detalhadas.</p>
+                </div>
+            </div>
+
+            <div class="container-cursos">
+                <img class="cursos-opcao-1" src="Assets/revisao.jpg" alt="revisao">
+                <div class="curso-descricao">
+                    <h4>Trilha ENEM Intensiva (Reta Final)</h4>
+                    <p>Revisão intensiva com os conteúdos mais cobrados, simulados comentados, mapas mentais e dicas
+                        para manter o foco e a estratégia na reta final da preparação.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
         <div class="curriculos">
             <a href="#"><i class="fab fa-linkedin"></i> João Silva</a>
             <a href="#"><i class="fab fa-github"></i> Maria Souza</a>
@@ -100,4 +143,5 @@
         <p>© 2025 Tutoriaê - ODS 4: Educação de Qualidade</p>
     </footer>
 </body>
+
 </html>

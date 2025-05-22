@@ -1,3 +1,134 @@
+/* CENTRALIZAÇÃO DO FORMULÁRIO DE CONTATO */
+.form-contato {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.form-contato form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 1rem 2rem;
+  width: 100%;
+  max-width: 1100px;
+}
+
+.form-contato input,
+.form-contato textarea {
+  font-size: 1.1rem;
+  padding: 0.9rem 1.2rem;
+  border-radius: 12px;
+  border: 1px solid var(--cinza-medio-tutoriae);
+  margin-bottom: 0;
+  flex: 1 1 220px;
+  box-sizing: border-box;
+}
+
+.form-contato textarea {
+  min-width: 320px;
+  min-height: 120px;
+  max-width: 400px;
+  flex: 2 1 320px;
+}
+
+.form-contato button {
+  align-self: flex-end;
+  margin-left: 1rem;
+  margin-top: 0;
+}
+
+@media (max-width: 900px) {
+  .form-contato form {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  .form-contato textarea {
+    min-width: 90vw;
+    max-width: 98vw;
+  }
+}
+/* Melhorias visuais para apresentação de imagens e textos */
+section {
+  margin: 2rem auto;
+  max-width: 900px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+  padding: 2rem;
+}
+
+.caixa, .lado-a-lado {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+  background: var(--bege-tutoriae, #f8ece0);
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  padding: 1rem 2rem;
+}
+
+.caixa img, .lado-a-lado img {
+  border-radius: 12px;
+  max-width: 120px;
+  height: auto;
+}
+
+h1, h2 {
+  font-family: 'Roboto', 'Open Sans', Arial, sans-serif;
+  color: var(--azul-tutoriae, #0d2c46);
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #222;
+}
+
+@media (max-width: 900px) {
+  #faca-parte .cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+  .faca-parte-card {
+    min-width: 90vw;
+    max-width: 98vw;
+    padding: 1.5rem 1rem;
+  }
+}
+
+@media (max-width: 700px) {
+  section {
+    padding: 1rem;
+  }
+  .caixa, .lado-a-lado {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+  }
+  .caixa img, .lado-a-lado img {
+    max-width: 100%;
+  }
+  .faca-parte-card h2 {
+    font-size: 1.3rem;
+  }
+  .faca-parte-card p {
+    font-size: 1rem;
+  }
+  .faca-parte-card {
+    min-width: 98vw;
+    max-width: 99vw;
+    padding: 1rem 0.5rem;
+  }
+}
 * {
     margin: 0;
     padding: 0;
@@ -168,8 +299,9 @@ main {
 .cards {
     height: 40vh;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
+    gap: 3.5rem;
 
     color: #0d2c46;
     font-weight: bold;
@@ -188,25 +320,40 @@ main {
 
 /*FAÇA PARTE*/
 #faca-parte {
-    padding: 2rem;
-    padding-bottom: 5rem;
-
+    padding: 2.5rem 0 4rem 0;
     background: url(/Assets/imagens/bg-cards.png);
     background-size: 15rem;
 }
 
+#faca-parte .cards {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 2.5rem;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 auto;
+}
+
 #faca-parte h1 {
-    color: #FFF;
-    font-size: 2rem;
-    margin-bottom: 2rem;
+    color: var(--azul-tutoriae);
+    font-size: 2.3rem;
+    margin-bottom: 1.2rem;
+    text-align: center;
+    font-weight: 800;
+    background: none;
+    box-shadow: none;
+    text-shadow: none;
+    letter-spacing: -1px;
+    margin-top: 0.5rem;
 }
 
 .faca-parte-card {
-    width: 30%;
-    height: fit-content;
-    max-width: 30rem;
-    height: auto;
-    padding: 1rem;
+    flex: 1 1 320px;
+    min-width: 320px;
+    max-width: 400px;
+    min-height: 260px;
+    padding: 2.2rem 1.5rem 2rem 1.5rem;
 
     display: flex;
     flex-direction: column;
@@ -216,25 +363,53 @@ main {
 
     background-color: var(--azul-tutoriae);
     color: #FFF;
-    opacity: 0.9;
-    border-radius: 1rem;
-    gap: 1rem;
-    box-shadow: 0.1rem 0.1rem 0.4rem var(--cinza-escuro-tutoriae);
+    opacity: 0.97;
+    border-radius: 1.2rem;
+    gap: 1.5rem;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.13);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.faca-parte-card:hover {
+    transform: translateY(-6px) scale(1.03);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.18);
 }
 
+.faca-parte-card h2 {
+    font-size: 2rem;
+    color: #fff;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.18);
+    margin-bottom: 0.5rem;
+}
 .faca-parte-card p {
-    font-weight: normal;
+    font-size: 1.25rem;
+    font-weight: 500;
     text-align: center;
+    color: #f8ece0;
+    text-shadow: 0 1px 4px rgba(0,0,0,0.13);
 }
 
 .faca-parte-card a {
-    padding: 1rem;
-
+    padding: 0.7rem 1.5rem;
     color: #FFF;
+    background: var(--laranja-tutoriae);
     border-radius: 0.5rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-top: 0.5rem;
+    text-shadow: 0 1px 4px rgba(0,0,0,0.13);
+    transition: background 0.2s, color 0.2s;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+}
+.faca-parte-card a:hover {
+    background: #fff;
+    color: var(--laranja-tutoriae);
+    text-decoration: underline;
 }
 
-.faca-parte-card a:hover, span {
+.faca-parte-card span {
     color: var(--laranja-tutoriae);
 }
 

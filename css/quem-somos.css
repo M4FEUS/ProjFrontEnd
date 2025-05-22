@@ -1,3 +1,124 @@
+button {
+    color: #FFF;
+    background-color: var(--azul-tutoriae);
+    opacity: 0.92;
+    padding: 0.7rem 1.5rem;
+    border: none;
+    border-radius: 0.7rem;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin: 1rem 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+    transition: transform 0.18s, box-shadow 0.18s, background 0.3s, color 0.3s;
+}
+button:hover {
+    background: var(--laranja-tutoriae);
+    color: var(--azul-tutoriae);
+    transform: translateY(-4px) scale(1.04);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+    transition: transform 0.18s, box-shadow 0.18s, background 0.3s, color 0.3s;
+}
+section, .quemsomos, .Contato, .Mapa {
+  margin: 2rem auto;
+  max-width: 900px;
+  background: var(--bege-tutoriae, #fdf6ee);
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+  padding: 2rem;
+}
+
+.Contato, .Mapa, .quemsomos {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  padding: 1.5rem 2rem;
+  margin-bottom: 1.5rem;
+}
+.Contato img, .Mapa img, .quemsomos img {
+  border-radius: 12px;
+  max-width: 120px;
+  height: auto;
+}
+
+h1, h2 {
+  font-family: 'Roboto', 'Open Sans', Arial, sans-serif;
+  color: var(--azul-tutoriae, #0d2c46);
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #222;
+}
+
+form {
+  background: var(--bege-tutoriae, #f8ece0);
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  padding: 1.5rem 2rem;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  max-width: 400px;
+  box-sizing: border-box;
+  border-radius: 8px;
+  border: 1px solid var(--cinza-medio-tutoriae, #b1b4bb);
+  padding: 0.5rem 1rem;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+form textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+form button {
+  align-self: flex-end;
+  margin-left: 0;
+  margin-top: 0.5rem;
+}
+
+form label {
+  font-weight: bold;
+  margin-bottom: 0.3rem;
+  color: var(--azul-tutoriae, #0d2c46);
+}
+
+@media (max-width: 700px) {
+  section, .quemsomos, .Contato, .Mapa {
+    padding: 1rem;
+  }
+  form {
+    padding: 1rem;
+  }
+  form input,
+  form textarea {
+    max-width: 98vw;
+  }
+}
+
+@media (max-width: 900px) {
+  form {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  form textarea {
+    min-width: 90vw;
+    max-width: 98vw;
+  }
+}
+
 * {
     margin: 0;
     padding: 0;

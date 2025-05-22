@@ -108,6 +108,15 @@ header li a:hover {
     opacity: 1;
 }
 
+.dropdown ul {
+    display: block;
+}
+
+.dropdown li {
+    color: #FFF;
+    padding: 0.2em;
+}
+
 .icons-header-search:hover .dropdown {
     display: block;
 }

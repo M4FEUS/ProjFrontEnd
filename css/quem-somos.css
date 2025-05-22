@@ -92,7 +92,7 @@ header li a:hover {
     box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.2);
     z-index: 4;
     background-color: var(--azul-tutoriae);
-    opacity: 0.8;
+    opacity: 0.9;
 }
 
 .dropdown a {
@@ -106,6 +106,15 @@ header li a:hover {
     background-color: var(--azul-claro-tutoriae);
     color: var(--azul-tutoriae);
     opacity: 1;
+}
+
+.dropdown ul {
+    display: block;
+}
+
+.dropdown li {
+    color: #FFF;
+    padding: 0.2em;
 }
 
 .icons-header-search:hover .dropdown {

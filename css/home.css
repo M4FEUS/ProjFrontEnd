@@ -99,13 +99,22 @@ header li a:hover {
     color: #FFF;
     opacity: 1;
     display: block;
-    padding: 0.2em
+    padding: 0.2em;
 }
 
 .dropdown a:hover {
     background-color: var(--azul-claro-tutoriae);
     color: var(--azul-tutoriae);
     opacity: 1;
+}
+
+.dropdown ul {
+    display: block;
+}
+
+.dropdown li {
+    color: #FFF;
+    padding: 0.2em;
 }
 
 .icons-header-search:hover .dropdown {

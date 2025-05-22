@@ -10,6 +10,8 @@
     --azul-tutoriae: #0d2c46;
     --laranja-tutoriae: #df8638;
     --bege-tutoriae: #f8ece0;
+    --cinza-tutoriae: #C7CCDB;
+    --cinza-french-tutoriae: #E1E5EE;
     --azul-claro-tutoriae: #c1d4e5;
     --cinza-gelo-tutoriae: #e6e7eb;
     --cinza-medio-tutoriae: #b1b4bb;
@@ -38,6 +40,8 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    box-shadow: 0.1rem 0 1rem var(--cinza-escuro-tutoriae);
 }
 
 header a {
@@ -122,3 +126,148 @@ header li a:hover {
 }
 
 
+
+/*MAIN*/
+main {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#main-banner {
+    height: 100vh;
+    background: repeating-linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(/Assets/imagens/estudante.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: larger;
+    color: #FFF;
+}
+
+
+/*CARDS*/
+#main-cards {
+    background-color: var(--cinza-gelo-tutoriae);
+    padding: 2rem;
+}
+
+#main-cards h1 {
+    color: var(--azul-tutoriae);
+    font-size: 2rem;
+}
+
+#main-cards span {
+    color: var(--laranja-tutoriae);
+}
+
+.cards {
+    height: 40vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    color: #0d2c46;
+    font-weight: bold;
+}
+
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    font-size: 1.3rem;
+}
+
+
+/*FAÇA PARTE*/
+#faca-parte {
+    padding: 2rem;
+    padding-bottom: 5rem;
+
+    background: url(/Assets/imagens/bg-cards.png);
+    background-size: 15rem;
+}
+
+#faca-parte h1 {
+    color: #FFF;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.faca-parte-card {
+    width: 30%;
+    height: fit-content;
+    max-width: 30rem;
+    height: auto;
+    padding: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    background-color: var(--azul-tutoriae);
+    color: #FFF;
+    opacity: 0.9;
+    border-radius: 1rem;
+    gap: 1rem;
+    box-shadow: 0.1rem 0.1rem 0.4rem var(--cinza-escuro-tutoriae);
+}
+
+.faca-parte-card p {
+    font-weight: normal;
+    text-align: center;
+}
+
+.faca-parte-card a {
+    padding: 1rem;
+
+    color: #FFF;
+    border-radius: 0.5rem;
+}
+
+.faca-parte-card a:hover, span {
+    color: var(--laranja-tutoriae);
+}
+
+
+#duvidas {
+    background-color: blue;
+}
+
+
+#faca-parte-voluntarios {
+    background-color: green;
+}
+
+
+
+/*DUVIDAS*/
+#duvidas-estudantes {
+    background-color: var(--azul-claro-tutoriae);
+
+    padding: 2rem;
+}
+
+#duvidas-estudantes h1 {
+    color: var(--azul-tutoriae);
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+
+/*FOOTER*/
+footer {
+    width: 100%;
+    height: auto;
+    background-color: var(--azul-tutoriae);
+    opacity: 0.8;
+}

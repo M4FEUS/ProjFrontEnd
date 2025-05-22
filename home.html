@@ -58,29 +58,43 @@
     </header>
 
     <main>
-        <section class="hero">
-            <h2>Conectamos voluntários a estudantes do ENEM</h2>
-            <img src="Assets/estudante.jpg" alt="Estudante">
+        <section id="main-banner">
+            <h1>Conectamos voluntários a estudantes do ENEM</h1>
+            <!-- <img src="Assets/estudante.jpg" alt="Estudante"> -->
         </section>
 
-        <section class="cards">
-            <h2>Cards</h2>
-            <div class="card">
-                <i class="fas fa-book"></i>
-                <p>Aulas de Matemática, Biologia e mais!</p>
-            </div>
-            <div class="card">
-                <i class="fas fa-users"></i>
-                <p>+ de 200 voluntários cadastrados</p>
+        <section id="main-cards">
+            <h1>Cards</h1>
+            <div class="cards">
+                <div class="card">
+                    <i class="fas fa-book"></i>
+                    <p>Aulas de <span>Matemática</span>, <span>Biologia</span> e <span>mais</span>!</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-users"></i>
+                    <p>+ de <span>200 voluntários</span> cadastrados</p>
+                </div>
             </div>
         </section>
-        <section class="hero">
-            <h2>Faça parte dos nossos Estudantes</h2>
-            <h3>No nosso site você pode se conectar com milhares de voluntários e estudantes!</h3>
+
+        <section id="faca-parte">
+            <h1>Faça parte</h1>
+            <div class="cards">
+                <div class="faca-parte-card">
+                    <h2>Faça parte dos nossos <span>Estudantes</span></h2>
+                    <p>No nosso site você pode se <span style="font-weight: bold; text-decoration: underline;">conectar</span> com milhares de voluntários e estudantes!</p>
+                    <a href="#duvidas-estudantes">Saiba mais!</a>
+                </div>
+                <div class="faca-parte-card">        
+                    <h2>Faça parte dos nossos <span>Voluntários</span></h2>
+                    <p>Aqui você pode <span style="font-weight: bold; text-decoration: underline;">transformar</span> a vida de alguém ajudando nos estudos para o ENEM!</p>
+                    <a href="#duvidas-voluntarios">Saiba mais!</a>
+                </div>
+            </div>
         </section>
-        <!-- Pensei em fazer caixas uma do lado da outra, vc aperta e leva para a descrição -->
-        <section class="duvidas">
-            <h2>Duvidas</h2>
+
+        <section id="duvidas-estudantes">
+            <h1>Dúvidas</h1>
             <a href="#como-ser-ajudado">
                 <div class="caixa">
                     <p>Como sou ajudado?</p>
@@ -89,25 +103,6 @@
             <a href="#oque-vou-aprender">
                 <div class="caixa">
                     <p>O que vou aprender?</p>
-                </div>
-            </a>
-        </section>
-
-        <section class="hero">
-            <h2>Faça parte dos nossos Voluntários</h2>
-            <h3>Aqui você pode transformar a vida de alguém ajudando nos estudos para o Enem!</h3>
-        </section>
-
-        <section class="duvidas">
-            <h2>Duvidas</h2>
-            <a href="#como-ajudar">
-                <div class="caixa">
-                    <p>Como ajudo sendo voluntário?</p>
-                </div>
-            </a>
-            <a href="#oque-ganho">
-                <div class="caixa">
-                    <p>O que ganho com isso?</p>
                 </div>
             </a>
         </section>
@@ -139,6 +134,22 @@
                 teoria à prática. E claro, vamos juntos construir uma Redação de excelência, com estrutura,
                 argumentos fortes e uma proposta de intervenção que faça a diferença. </p>
         </section>
+
+        <section id="duvidas-voluntarios">
+            <h2>Duvidas</h2>
+            <a href="#como-ajudar">
+                <div class="caixa">
+                    <p>Como ajudo sendo voluntário?</p>
+                </div>
+            </a>
+            <a href="#oque-ganho">
+                <div class="caixa">
+                    <p>O que ganho com isso?</p>
+                </div>
+            </a>
+        </section>
+
+
 
         <section id="como-ajudar" style="margin-top: 60px;">
             <h2>Como ajudar sendo voluntário</h2>
@@ -180,7 +191,7 @@
             <a href="#"><i class="fab fa-github"></i> Maria Souza</a>
             <a href="#"><i class="fab fa-github"></i> Livia Rosa</a>
         </div>
-        <p>© 2025 Tutoriaê - ODS 4: Educação de Qualidade</p>
+        <p>© 2025 Tutoriaê</p>
     </footer>
 </body>
 

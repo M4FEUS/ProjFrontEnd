@@ -78,16 +78,28 @@ main {
     margin-bottom: 1rem;
 }
 
-.container p {
+.container p{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
     font-size: small;
 }
 
-.container p a {
-    color: #0d2c46;
+.novo-aqui-cad {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: small;
+    font-weight: bold;
+}
+
+.novo-aqui-cad a, .container p {
+    color: var(--azul-tutoriae);
+}
+
+.novo-aqui-cad a:hover {
+    color: var(--laranja-tutoriae);
+    transition: ease 0.3s;
 }
 
 .container p a:hover {

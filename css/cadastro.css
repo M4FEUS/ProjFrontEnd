@@ -117,12 +117,27 @@ main {
     font-size: small;
 }
 
-.container p a {
-    color: var(--azul-tutoriae);
+.cadastro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
 }
 
-.container p a:hover {
+.cad-cad a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    color: var(--azul-tutoriae);
+    font-size: small;
+    font-weight: bold;
+}
+
+.cad-cad a:hover {
     color: var(--laranja-tutoriae);
+    transform: ease 0.3s;
 }
 
 form {
@@ -136,6 +151,10 @@ form > input {
     border-radius: 0.4rem;
     border: none;
     padding: 0.5rem;
+}
+
+.expertise-disciplina {
+    font-size: 0.9rem;
 }
 
 button {
@@ -154,6 +173,7 @@ button {
 button:hover {
     background-color: var(--laranja-tutoriae);
     color: var(--azul-tutoriae);
+    transition: ease 0.3;
 }
 
 .expertise {

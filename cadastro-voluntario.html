@@ -17,6 +17,7 @@
         
         <div class="nav-cadastro">
             <ul>
+                <li><a href="index.html">Login</a></li>
                 <li class="pagina-atual" href="cadastro-voluntario.html">Voluntário</li>
                 <li><a href="cadastro-estudante.html">Estudante</a></li>
             </ul>
@@ -42,6 +43,7 @@
 
                 <label for="expertise">Área de expertise:</label>
                 <select id="expertise" name="expertise" required>
+                    <option value="" disabled selected hidden>Selecione</option>
                     <option value="Artes">Artes</option>
                     <option value="biologia">Biologia</option>
                     <option value="Filosofia">Filosofia</option>
@@ -61,9 +63,16 @@
 
                 <button type="submit">Enviar</button>
             </form>
-            <div id="cadastro">
-                <p class="cad-login">Já tem conta? <a href="index.html">Faça login</a></p>
-                <p class="cad-cad">Quero ser estudante! <a href="cadastro-estudante.html">Cadastre-se</a></p>
+
+            <div class="cadastro">
+                <div class="cad-cad">
+                    <p>Já tem conta?</p>
+                    <a href="index.html">Faça login</a>
+                </div>
+                <div class="cad-cad">
+                    <p>Quero ser Estudante!</p>
+                    <a href="cadastro-voluntario.html">Cadastre-se</a>
+                </div>
             </div>
         </div>
     </main>

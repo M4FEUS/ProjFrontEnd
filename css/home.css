@@ -320,9 +320,26 @@ main {
 
 /*FAÇA PARTE*/
 #faca-parte {
-    padding: 2.5rem 0 4rem 0;
+    padding: 2.5rem 2rem 4rem 2rem;
     background: url(/Assets/imagens/bg-cards.png);
     background-size: 15rem;
+    border-radius: 2rem;
+    max-width: 1000px;
+    margin: 2rem auto;
+    box-sizing: border-box;
+}
+
+#faca-parte h1 {
+    color: #fff;
+    font-size: 2.3rem;
+    margin-bottom: 1.2rem;
+    text-align: center;
+    font-weight: 800;
+    background: none;
+    box-shadow: none;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.18);
+    letter-spacing: -1px;
+    margin-top: 0.5rem;
 }
 
 #faca-parte .cards {
@@ -333,19 +350,7 @@ main {
     flex-wrap: wrap;
     width: 100%;
     margin: 0 auto;
-}
-
-#faca-parte h1 {
-    color: var(--azul-tutoriae);
-    font-size: 2.3rem;
-    margin-bottom: 1.2rem;
-    text-align: center;
-    font-weight: 800;
-    background: none;
-    box-shadow: none;
-    text-shadow: none;
-    letter-spacing: -1px;
-    margin-top: 0.5rem;
+    box-sizing: border-box;
 }
 
 .faca-parte-card {
@@ -354,13 +359,11 @@ main {
     max-width: 400px;
     min-height: 260px;
     padding: 2.2rem 1.5rem 2rem 1.5rem;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-
     background-color: var(--azul-tutoriae);
     color: #FFF;
     opacity: 0.97;
@@ -368,6 +371,7 @@ main {
     gap: 1.5rem;
     box-shadow: 0 4px 24px rgba(0,0,0,0.13);
     transition: transform 0.2s, box-shadow 0.2s;
+    margin: 0;
 }
 .faca-parte-card:hover {
     transform: translateY(-6px) scale(1.03);
@@ -445,4 +449,20 @@ footer {
     height: auto;
     background-color: var(--azul-tutoriae);
     opacity: 0.8;
+}
+
+@media (max-width: 900px) {
+  #faca-parte .cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+  .faca-parte-card {
+    min-width: 90vw;
+    max-width: 98vw;
+    padding: 1.5rem 1rem;
+  }
+  #faca-parte {
+    padding: 1.5rem 0.5rem 2rem 0.5rem;
+  }
 }

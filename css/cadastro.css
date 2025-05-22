@@ -137,7 +137,7 @@ main {
 
 .cad-cad a:hover {
     color: var(--laranja-tutoriae);
-    transform: ease 0.3s;
+    transition: ease 0.3s;
 }
 
 form {
@@ -151,6 +151,10 @@ form > input {
     border-radius: 0.4rem;
     border: none;
     padding: 0.5rem;
+}
+
+form h4 {
+    font-weight: 200;
 }
 
 .expertise-disciplina {
@@ -173,7 +177,7 @@ button {
 button:hover {
     background-color: var(--laranja-tutoriae);
     color: var(--azul-tutoriae);
-    transition: ease 0.3;
+    transition: ease 0.3s;
 }
 
 .expertise {

@@ -21,14 +21,36 @@ button:hover {
 }
 section {
   margin: 2rem auto;
-  max-width: 900px;
+  max-width: 1000px;
   background: #fff;
   border-radius: 16px;
   box-shadow: 0 4px 24px rgba(0,0,0,0.08);
   padding: 2rem;
 }
 
-.container-cursos, .container-opcao {
+.disciplinas-containers {
+    display: inline-flex;
+}
+
+.container-opcao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    padding: 1rem;
+    background-color: var(--bege-tutoriae);
+    margin: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0.1rem 0.1rem 0.6rem var(--cinza-escuro-tutoriae);
+    gap: 0.5rem;
+}
+
+.container-opcao:hover {
+    
+}
+
+/* .container-cursos, .container-opcao {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -38,16 +60,21 @@ section {
   border-radius: 12px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.07);
   padding: 1rem 2rem;
+} */
+
+.container-opcao img {
+    max-width: 15rem;
+    border-radius: 1rem;
 }
 
-.container-cursos img, .container-opcao img {
+/* .container-cursos img, .container-opcao img {
   border-radius: 12px;
   max-width: 120px;
   height: auto;
   object-fit: contain;
   display: block;
   margin: 0 auto;
-}
+} */
 
 h1, h2 {
   font-family: 'Roboto', 'Open Sans', Arial, sans-serif;

@@ -1,6 +1,7 @@
 # Tutoriê-Educação para todos
 
-![Badge](https://img.shields.io/badge/-FLUTTER-02569B?logo=flutter&logoColor=white&style=for-the-badge)
+![Badge](https://img.shields.io/badge/-HTML-df8638?logo=html5&logoColor=blue&style=for-the-badge)
+![Badge](https://img.shields.io/badge/-CSS-df8638?logo=css&logoColor=blue&style=for-the-badge)
 
 # Índice 
 * [Descrição do Projeto](#descrição-do-projeto)

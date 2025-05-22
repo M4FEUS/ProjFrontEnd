@@ -1,6 +1,6 @@
 # Tutoriê-Educação para todos
 
-[Badge em Desenvolvimento](http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=df8638&style=for-the-badge)
+![Badge](https://img.shields.io/badge/-FLUTTER-02569B?logo=flutter&logoColor=white&style=for-the-badge)
 
 # Índice 
 * [Descrição do Projeto](#descrição-do-projeto)

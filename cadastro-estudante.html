@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tutoriaê - Cadastro de Estudantes</title>
-  
+
     <!-- links -->
     <link rel="stylesheet" href="css/style.css">
     <!-- <link rel="stylesheet" href="css/cadastro.css"> -->
     <link rel="shortcut icon" href="Assets/logos/logo-tutoriae-branco.png">
 
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
+
 <body>
     <header>
         <div class="header-container">
@@ -25,7 +28,8 @@
                     <div class="voluntario-dropdown">
                         <li><a href="">Quer ser voluntário?</a></li>
                         <div class="dropdown">
-                            <p>Para se voluntariar, mande e-mail para: <span style="color: var(--cor-primaria);"><b>contato@tutoriae.com</b></span></p>
+                            <p>Para se voluntariar, mande e-mail para: <span
+                                    style="color: var(--cor-primaria);"><b>contato@tutoriae.com</b></span></p>
                         </div>
                     </div>
                 </ul>
@@ -33,21 +37,24 @@
         </div>
     </header>
 
-<main class="container">
+    <main class="container">
         <div class="form-container" style="max-width: 600px;">
             <h2 class="form-title">Cadastre-se</h2>
             <form action="index.html" method="get">
                 <div class="form-group">
                     <label for="nome" class="form-label">Nome Completo</label>
-                    <input type="text" id="nome" name="nome" class="form-input" placeholder="Seu nome completo" required>
+                    <input type="text" id="nome" name="nome" class="form-input" placeholder="Seu nome completo"
+                        required>
                 </div>
                 <div class="form-group">
                     <label for="email" class="form-label">E-mail</label>
-                    <input type="email" id="email" name="email" class="form-input" placeholder="Seu melhor e-mail" required>
+                    <input type="email" id="email" name="email" class="form-input" placeholder="Seu melhor e-mail"
+                        required>
                 </div>
                 <div class="form-group">
                     <label for="telefone" class="form-label">Telefone</label>
-                    <input type="tel" id="telefone" name="telefone" class="form-input" placeholder="(00) 00000-0000" maxlength="11" required>
+                    <input type="tel" id="telefone" name="telefone" class="form-input" placeholder="(00) 00000-0000"
+                        maxlength="11" required>
                 </div>
                 <div class="form-group">
                     <label for="data_nascimento" class="form-label">Data de Nascimento</label>
@@ -55,66 +62,69 @@
                 </div>
                 <div class="form-group">
                     <label for="senha" class="form-label">Senha</label>
-                    <input type="password" id="senha" name="senha" class="form-input" placeholder="Crie uma senha segura" required>
+                    <input type="password" id="senha" name="senha" class="form-input"
+                        placeholder="Crie uma senha segura" required>
                 </div>
                 <div class="form-group">
                     <label for="confirmar_senha" class="form-label">Confirmar Senha</label>
-                    <input type="password" id="confirmar_senha" name="confirmar_senha" class="form-input" placeholder="Confirme sua senha" required>
+                    <input type="password" id="confirmar_senha" name="confirmar_senha" class="form-input"
+                        placeholder="Confirme sua senha" required>
                 </div>
                 <div class="form-group">
                     <h4 class="interesse-text">Interesse</h4>
                     <div class="interesse">
                         <div class="interesse-esquerda">
                             <div class="interesse-disciplina">
-                                <input type="checkbox" name="interesse" id="interesse-artes" value="artes"> 
+                                <input type="checkbox" name="interesse" id="interesse-artes" value="artes">
                                 <label for="interesse-artes">Artes</label>
                             </div>
                             <div class="interesse-disciplina">
-                                <input type="checkbox" name="interesse" id="interesse-biologia" value="biologia"> 
+                                <input type="checkbox" name="interesse" id="interesse-biologia" value="biologia">
                                 <label for="interesse-biologia">Biologia</label>
                             </div>
                             <div class="interesse-disciplina">
-                                <input type="checkbox" name="interesse" id="interesse-filosofia" value="filosofia">  
+                                <input type="checkbox" name="interesse" id="interesse-filosofia" value="filosofia">
                                 <label for="interesse-filosofia">Filosofia</label>
                             </div>
                             <div class="interesse-disciplina">
-                                <input type="checkbox" name="interesse" id="interesse-fisica" value="fisica"> 
+                                <input type="checkbox" name="interesse" id="interesse-fisica" value="fisica">
                                 <label for="interesse-fisica">Física</label>
                             </div>
                             <div class="interesse-disciplina">
-                                <input type="checkbox" name="interesse" id="interesse-geografia" value="geografia"> 
+                                <input type="checkbox" name="interesse" id="interesse-geografia" value="geografia">
                                 <label for="interesse-geografia">Geografia</label>
                             </div>
                         </div>
                         <div class="interesse-meio">
                             <div class="interesse-disciplina">
-                                <input type="checkbox" name="interesse" id="interesse-historia" value="historia"> 
+                                <input type="checkbox" name="interesse" id="interesse-historia" value="historia">
                                 <label for="interesse-historia">História</label>
                             </div>
                             <div class="interesse-disciplina">
-                                <input type="checkbox" name="interesse" id="interesse-estrangeira" value="lingua-estrangeira"> 
+                                <input type="checkbox" name="interesse" id="interesse-estrangeira"
+                                    value="lingua-estrangeira">
                                 <label for="interesse-estrangeira">Língua Estrangeira</label>
                             </div>
                             <div class="interesse-disciplina">
-                                <input type="checkbox" name="interesse" id="interesse-matematica" value="matematica"> 
+                                <input type="checkbox" name="interesse" id="interesse-matematica" value="matematica">
                                 <label for="interesse-matematica">Matemática</label>
                             </div>
                         </div>
                         <div class="interesse-direita">
                             <div class="interesse-disciplina">
-                                <input type="checkbox" name="interesse" id="interesse-portugues" value="portugues"> 
+                                <input type="checkbox" name="interesse" id="interesse-portugues" value="portugues">
                                 <label for="interesse-portugues">Português</label>
                             </div>
                             <div class="interesse-disciplina">
-                                <input type="checkbox" name="interesse" id="interesse-quimica" value="quimica"> 
+                                <input type="checkbox" name="interesse" id="interesse-quimica" value="quimica">
                                 <label for="interesse-quimica">Química</label>
                             </div>
                             <div class="interesse-disciplina">
-                                <input type="checkbox" name="interesse" id="interesse-redacao" value="redacao"> 
+                                <input type="checkbox" name="interesse" id="interesse-redacao" value="redacao">
                                 <label for="interesse-redacao">Redação</label>
                             </div>
                             <div class="interesse-disciplina">
-                                <input type="checkbox" name="interesse" id="interesse-sociologia" value="sociologia"> 
+                                <input type="checkbox" name="interesse" id="interesse-sociologia" value="sociologia">
                                 <label for="interesse-sociologia">Sociologia</label>
                             </div>
                         </div>
@@ -122,7 +132,9 @@
                 </div>
                 <div class="form-group">
                     <input type="checkbox" id="termos" name="termos" required>
-                    <label for="termos">Concordo com os <a href="#" style="color: var(--cor-primaria);">Termos de Uso</a> e <a href="#" style="color: var(--cor-primaria);">Política de Privacidade</a></label>
+                    <label for="termos">Concordo com os <a href="#" style="color: var(--cor-primaria);">Termos de
+                            Uso</a> e <a href="#" style="color: var(--cor-primaria);">Política de
+                            Privacidade</a></label>
                 </div>
                 <button type="submit" class="btn" style="width: 100%;">Cadastrar</button>
             </form>
@@ -132,7 +144,7 @@
         </div>
     </main>
 
-        <footer>
+    <footer>
         <div class="footer-container">
             <div class="footer-info">
                 <div class="footer-logo">Tutoriaê</div>
@@ -145,7 +157,7 @@
                 </div>
             </div>
 
-            
+
             <div class="footer-links">
                 <h3>Contato</h3>
                 <ul>
@@ -155,10 +167,11 @@
                 </ul>
             </div>
         </div>
-        
+
         <div class="footer-bottom">
             <p>© 2025 Tutoriaê - ODS 4: Educação de Qualidade</p>
         </div>
     </footer>
 </body>
+
 </html>

@@ -11,23 +11,25 @@ button {
     font-size: 1.1rem;
     font-weight: bold;
     margin: 1rem 0;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.10);
     transition: transform 0.18s, box-shadow 0.18s, background 0.3s, color 0.3s;
 }
+
 button:hover {
     background: var(--laranja-tutoriae);
     color: var(--azul-tutoriae);
     transform: translateY(-4px) scale(1.04);
-    box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.18);
     transition: transform 0.18s, box-shadow 0.18s, background 0.3s, color 0.3s;
 }
+
 section {
-  margin: 2rem auto;
-  max-width: 1000px;
-  background: #fff;
-  border-radius: 16px;
-  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
-  padding: 2rem;
+    margin: 2rem auto;
+    max-width: 1000px;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+    padding: 2rem;
 }
 
 .disciplinas-containers {
@@ -48,9 +50,7 @@ section {
     gap: 0.5rem;
 }
 
-.container-opcao:hover {
-    
-}
+.container-opcao:hover {}
 
 /* .container-cursos, .container-opcao {
   display: flex;
@@ -78,34 +78,40 @@ section {
   margin: 0 auto;
 } */
 
-h1, h2 {
-  font-family: 'Playfair Display', serif;
-  font-optical-sizing: auto;
-  font-weight: 700;
-  font-style: normal;
-  color: var(--azul-tutoriae, #0d2c46);
-  margin-bottom: 1rem;
+h1,
+h2 {
+    font-family: 'Playfair Display', serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    color: var(--azul-tutoriae, #0d2c46);
+    margin-bottom: 1rem;
 }
 
 p {
-  font-size: 1.1rem;
-  line-height: 1.6;
-  color: #222;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #222;
 }
 
 @media (max-width: 700px) {
-  section {
-    padding: 1rem;
-  }
-  .container-cursos, .container-opcao {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 1rem;
-  }
-  .container-cursos img, .container-opcao img {
-    max-width: 100%;
-  }
+    section {
+        padding: 1rem;
+    }
+
+    .container-cursos,
+    .container-opcao {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1rem;
+    }
+
+    .container-cursos img,
+    .container-opcao img {
+        max-width: 100%;
+    }
 }
+
 * {
     margin: 0;
     padding: 0;
@@ -189,7 +195,8 @@ header li a:hover {
     gap: 1rem;
 }
 
-.icons-header-search, .icons-header-user{
+.icons-header-search,
+.icons-header-user {
     position: relative;
     display: inline-block;
 }
@@ -230,5 +237,3 @@ header li a:hover {
 .icons-header-search:hover .dropdown {
     display: block;
 }
-
-

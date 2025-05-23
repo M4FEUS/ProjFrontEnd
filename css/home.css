@@ -50,11 +50,13 @@
     align-items: center;
     gap: 1rem;
   }
+
   .form-contato textarea {
     min-width: 90vw;
     max-width: 98vw;
   }
 }
+
 /* Melhorias visuais para apresentação de imagens e textos */
 /* section {
   margin: 2rem auto;
@@ -65,24 +67,27 @@
   padding: 2rem;
 } */
 
-.caixa, .lado-a-lado {
+.caixa,
+.lado-a-lado {
   display: flex;
   align-items: center;
   gap: 1.5rem;
   margin-bottom: 1.5rem;
   background: var(--bege-tutoriae, #f8ece0);
   border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
   padding: 1rem 2rem;
 }
 
-.caixa img, .lado-a-lado img {
+.caixa img,
+.lado-a-lado img {
   border-radius: 12px;
   max-width: 120px;
   height: auto;
 }
 
-h1, h2 {
+h1,
+h2 {
   font-family: 'Playfair Display', serif;
   font-optical-sizing: auto;
   font-weight: 700;
@@ -103,6 +108,7 @@ p {
     align-items: center;
     gap: 2rem;
   }
+
   .faca-parte-card {
     min-width: 90vw;
     max-width: 98vw;
@@ -114,169 +120,178 @@ p {
   section {
     padding: 1rem;
   }
-  .caixa, .lado-a-lado {
+
+  .caixa,
+  .lado-a-lado {
     flex-direction: column;
     align-items: flex-start;
     padding: 1rem;
   }
-  .caixa img, .lado-a-lado img {
+
+  .caixa img,
+  .lado-a-lado img {
     max-width: 100%;
   }
+
   .faca-parte-card h2 {
     font-size: 1.3rem;
   }
+
   .faca-parte-card p {
     font-size: 1rem;
   }
+
   .faca-parte-card {
     min-width: 98vw;
     max-width: 99vw;
     padding: 1rem 0.5rem;
   }
 }
+
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Open Sans', Arial, sans-serif;
-    text-decoration: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', Arial, sans-serif;
+  text-decoration: none;
 }
 
 :root {
-    --azul-tutoriae: #0d2c46;
-    --laranja-tutoriae: #df8638;
-    --bege-tutoriae: #f8ece0;
-    --cinza-tutoriae: #C7CCDB;
-    --cinza-french-tutoriae: #E1E5EE;
-    --azul-claro-tutoriae: #c1d4e5;
-    --cinza-gelo-tutoriae: #e6e7eb;
-    --cinza-medio-tutoriae: #b1b4bb;
-    --cinza-escuro-tutoriae: #151718;
+  --azul-tutoriae: #0d2c46;
+  --laranja-tutoriae: #df8638;
+  --bege-tutoriae: #f8ece0;
+  --cinza-tutoriae: #C7CCDB;
+  --cinza-french-tutoriae: #E1E5EE;
+  --azul-claro-tutoriae: #c1d4e5;
+  --cinza-gelo-tutoriae: #e6e7eb;
+  --cinza-medio-tutoriae: #b1b4bb;
+  --cinza-escuro-tutoriae: #151718;
 }
 
 body {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #FFF;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #FFF;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 
 /*HEADER*/
 header {
-    width: 100%;
-    height: auto;
-    background-color: #FFF;
-    padding: 0.65rem 1rem;
+  width: 100%;
+  height: auto;
+  background-color: #FFF;
+  padding: 0.65rem 1rem;
 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
 
-    /* box-shadow: 0.1rem 0 1rem var(--cinza-escuro-tutoriae); */
+  /* box-shadow: 0.1rem 0 1rem var(--cinza-escuro-tutoriae); */
 }
 
 header a {
-    color: var(--azul-tutoriae);
-    font-weight: bold;
+  color: var(--azul-tutoriae);
+  font-weight: bold;
 }
 
 header ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
 }
 
 header li {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 header li a {
-    color: var(--azul-tutoriae);
-    opacity: 0.7;
+  color: var(--azul-tutoriae);
+  opacity: 0.7;
 }
 
 header li a:hover {
-    opacity: 1;
-    color: var(--laranja-tutoriae);
-    text-decoration: underline;
-    transition: ease 0.4s;
+  opacity: 1;
+  color: var(--laranja-tutoriae);
+  text-decoration: underline;
+  transition: ease 0.4s;
 }
 
 .pagina-atual {
-    color: var(--azul-tutoriae);
-    font-weight: bold;
-    opacity: 1;
+  color: var(--azul-tutoriae);
+  font-weight: bold;
+  opacity: 1;
 }
 
 .icons-header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
 }
 
-.icons-header-search, .icons-header-user{
-    position: relative;
-    display: inline-block;
+.icons-header-search,
+.icons-header-user {
+  position: relative;
+  display: inline-block;
 }
 
 .dropdown {
-    display: none;
-    position: absolute;
-    min-width: 10rem;
-    right: 0;
-    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.2);
-    z-index: 4;
-    background-color: var(--azul-tutoriae);
-    opacity: 0.8;
+  display: none;
+  position: absolute;
+  min-width: 10rem;
+  right: 0;
+  box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.2);
+  z-index: 4;
+  background-color: var(--azul-tutoriae);
+  opacity: 0.8;
 }
 
 .dropdown a {
-    color: #FFF;
-    opacity: 1;
-    display: block;
-    padding: 0.2em;
+  color: #FFF;
+  opacity: 1;
+  display: block;
+  padding: 0.2em;
 }
 
 .dropdown a:hover {
-    background-color: var(--azul-claro-tutoriae);
-    color: var(--azul-tutoriae);
-    opacity: 1;
+  background-color: var(--azul-claro-tutoriae);
+  color: var(--azul-tutoriae);
+  opacity: 1;
 }
 
 .dropdown ul {
-    display: block;
+  display: block;
 }
 
 .dropdown li {
-    color: #FFF;
-    padding: 0.2em;
+  color: #FFF;
+  padding: 0.2em;
 }
 
 .icons-header-search:hover .dropdown {
-    display: block;
+  display: block;
 }
 
 
 
 /*MAIN*/
 main {
-    height: auto;
-    display: flex;
-    flex-direction: column;
+  height: auto;
+  display: flex;
+  flex-direction: column;
 }
 
 #main-banner {
   width: 100%;
   height: 100vh;
-  background: repeating-linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(/Assets/imagens/estudante.png);
+  background: repeating-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/Assets/imagens/estudante.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -287,7 +302,7 @@ main {
   font-size: 2rem;
 }
 
-#main-banner h1{
+#main-banner h1 {
   color: #FFF;
 }
 
@@ -309,17 +324,17 @@ main {
 
 /*CARDS*/
 #main-cards {
-    background-color: var(--cinza-gelo-tutoriae);
-    padding: 2rem;
+  background-color: var(--cinza-gelo-tutoriae);
+  padding: 2rem;
 }
 
 #main-cards h1 {
-    color: var(--azul-tutoriae);
-    font-size: 2rem;
+  color: var(--azul-tutoriae);
+  font-size: 2rem;
 }
 
 #main-cards span {
-    color: var(--laranja-tutoriae);
+  color: var(--laranja-tutoriae);
 }
 
 #main-cards p {
@@ -331,158 +346,161 @@ main {
 }
 
 .cards {
-    height: 40vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 3.5rem;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3.5rem;
 
-    color: #0d2c46;
-    font-weight: bold;
+  color: #0d2c46;
+  font-weight: bold;
 }
 
 
 .card {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 
-    font-size: 1.3rem;
+  font-size: 1.3rem;
 }
 
 
 /*FAÇA PARTE*/
 #faca-parte {
-    padding: 2.5rem 2rem 4rem 2rem;
-    background: url(/Assets/imagens/bg-cards.png);
-    background-size: 15rem;
-    border-radius: 2rem;
-    max-width: 1000px;
-    margin: 2rem auto;
-    box-sizing: border-box;
+  padding: 2.5rem 2rem 4rem 2rem;
+  background: url(/Assets/imagens/bg-cards.png);
+  background-size: 15rem;
+  border-radius: 2rem;
+  max-width: 1000px;
+  margin: 2rem auto;
+  box-sizing: border-box;
 }
 
 #faca-parte h1 {
-    color: #fff;
-    font-size: 2.3rem;
-    margin-bottom: 1.2rem;
-    text-align: center;
-    font-weight: 800;
-    background: none;
-    box-shadow: none;
-    text-shadow: 0 2px 8px rgba(0,0,0,0.18);
-    letter-spacing: -1px;
-    margin-top: 0.5rem;
+  color: #fff;
+  font-size: 2.3rem;
+  margin-bottom: 1.2rem;
+  text-align: center;
+  font-weight: 800;
+  background: none;
+  box-shadow: none;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.18);
+  letter-spacing: -1px;
+  margin-top: 0.5rem;
 }
 
 #faca-parte .cards {
-    display: flex;
-    justify-content: center;
-    align-items: stretch;
-    gap: 2.5rem;
-    flex-wrap: wrap;
-    width: 100%;
-    margin: 0 auto;
-    box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
 }
 
 .faca-parte-card {
-    flex: 1 1 320px;
-    min-width: 320px;
-    max-width: 400px;
-    min-height: 260px;
-    padding: 2.2rem 1.5rem 2rem 1.5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background-color: var(--azul-tutoriae);
-    color: #FFF;
-    opacity: 0.97;
-    border-radius: 1.2rem;
-    gap: 1.5rem;
-    box-shadow: 0 4px 24px rgba(0,0,0,0.13);
-    transition: transform 0.2s, box-shadow 0.2s;
-    margin: 0;
+  flex: 1 1 320px;
+  min-width: 320px;
+  max-width: 400px;
+  min-height: 260px;
+  padding: 2.2rem 1.5rem 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: var(--azul-tutoriae);
+  color: #FFF;
+  opacity: 0.97;
+  border-radius: 1.2rem;
+  gap: 1.5rem;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.13);
+  transition: transform 0.2s, box-shadow 0.2s;
+  margin: 0;
 }
+
 .faca-parte-card:hover {
-    transform: translateY(-6px) scale(1.03);
-    box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.18);
 }
 
 .faca-parte-card h2 {
-    font-size: 2rem;
-    color: #fff;
-    text-shadow: 0 2px 8px rgba(0,0,0,0.18);
-    margin-bottom: 0.5rem;
+  font-size: 2rem;
+  color: #fff;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.18);
+  margin-bottom: 0.5rem;
 }
+
 .faca-parte-card p {
-    font-size: 1.25rem;
-    font-weight: 500;
-    text-align: center;
-    color: #f8ece0;
-    text-shadow: 0 1px 4px rgba(0,0,0,0.13);
+  font-size: 1.25rem;
+  font-weight: 500;
+  text-align: center;
+  color: #f8ece0;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.13);
 }
 
 .faca-parte-card a {
-    padding: 0.7rem 1.5rem;
-    color: #FFF;
-    background: var(--laranja-tutoriae);
-    border-radius: 0.5rem;
-    font-size: 1.1rem;
-    font-weight: bold;
-    margin-top: 0.5rem;
-    text-shadow: 0 1px 4px rgba(0,0,0,0.13);
-    transition: background 0.2s, color 0.2s;
-    outline: none;
-    border: none;
-    cursor: pointer;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+  padding: 0.7rem 1.5rem;
+  color: #FFF;
+  background: var(--laranja-tutoriae);
+  border-radius: 0.5rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-top: 0.5rem;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.13);
+  transition: background 0.2s, color 0.2s;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.10);
 }
+
 .faca-parte-card a:hover {
-    background: #fff;
-    color: var(--laranja-tutoriae);
-    text-decoration: underline;
+  background: #fff;
+  color: var(--laranja-tutoriae);
+  text-decoration: underline;
 }
 
 .faca-parte-card span {
-    color: var(--laranja-tutoriae);
+  color: var(--laranja-tutoriae);
 }
 
 
 #duvidas {
-    background-color: blue;
+  background-color: blue;
 }
 
 
 #faca-parte-voluntarios {
-    background-color: green;
+  background-color: green;
 }
 
 
 
 /*DUVIDAS*/
 #duvidas-estudantes {
-    background-color: #fff;
+  background-color: #fff;
 
-    padding: 2rem;
+  padding: 2rem;
 }
 
 #duvidas-estudantes h1 {
-    color: var(--azul-tutoriae);
-    font-size: 2rem;
-    margin-bottom: 2rem;
+  color: var(--azul-tutoriae);
+  font-size: 2rem;
+  margin-bottom: 2rem;
 }
 
 
 /*FOOTER*/
 footer {
-    width: 100%;
-    height: auto;
-    background-color: var(--azul-tutoriae);
-    opacity: 0.8;
+  width: 100%;
+  height: auto;
+  background-color: var(--azul-tutoriae);
+  opacity: 0.8;
 }
 
 @media (max-width: 900px) {
@@ -491,11 +509,13 @@ footer {
     align-items: center;
     gap: 2rem;
   }
+
   .faca-parte-card {
     min-width: 90vw;
     max-width: 98vw;
     padding: 1.5rem 1rem;
   }
+
   #faca-parte {
     padding: 1.5rem 0.5rem 2rem 0.5rem;
   }

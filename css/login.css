@@ -62,9 +62,9 @@ main {
     align-items: center;
 }
 
-.logo > img {
+.logo>img {
     border-radius: 15rem;
-    
+
 }
 
 
@@ -75,7 +75,7 @@ form {
     gap: 0.5rem;
 }
 
-form > input {
+form>input {
     height: 1.5rem;
     border-radius: 0.4rem;
     border: none;
@@ -98,7 +98,7 @@ form > input {
     margin-bottom: 1rem;
 }
 
-.container p{
+.container p {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -113,7 +113,8 @@ form > input {
     font-weight: bold;
 }
 
-.novo-aqui-cad a, .container p {
+.novo-aqui-cad a,
+.container p {
     color: var(--azul-tutoriae);
 }
 
@@ -137,14 +138,15 @@ button {
     font-size: 1.1rem;
     font-weight: bold;
     margin: 1rem 0;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.10);
     transition: transform 0.18s, box-shadow 0.18s, background 0.3s, color 0.3s;
 }
+
 button:hover {
     background: var(--laranja-tutoriae);
     color: var(--azul-tutoriae);
     transform: translateY(-4px) scale(1.04);
-    box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.18);
     transition: transform 0.18s, box-shadow 0.18s, background 0.3s, color 0.3s;
 }
 
@@ -168,9 +170,10 @@ footer {
     margin-top: auto;
 }
 
-h1, h2 {
-  font-family: 'Playfair Display', serif;
-  font-optical-sizing: auto;
-  font-weight: 700;
-  font-style: normal;
+h1,
+h2 {
+    font-family: 'Playfair Display', serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
 }

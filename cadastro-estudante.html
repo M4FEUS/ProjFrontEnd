@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tutoriaê - Cadastro de Estudante</title>
+    <title>Tutoriaê - Cadastro de Estudantes</title>
   
     <!-- links -->
     <link rel="stylesheet" href="css/style.css">
     <!-- <link rel="stylesheet" href="css/cadastro.css"> -->
-    <link rel="shortcut icon" href="Assets/logos/logo-tutoriae.png">
+    <link rel="shortcut icon" href="Assets/logos/logo-tutoriae-branco.png">
 
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -47,7 +47,7 @@
                 </div>
                 <div class="form-group">
                     <label for="telefone" class="form-label">Telefone</label>
-                    <input type="tel" id="telefone" name="telefone" class="form-input" placeholder="(00) 00000-0000" required>
+                    <input type="tel" id="telefone" name="telefone" class="form-input" placeholder="(00) 00000-0000" maxlength="11" required>
                 </div>
                 <div class="form-group">
                     <label for="data_nascimento" class="form-label">Data de Nascimento</label>
@@ -62,16 +62,63 @@
                     <input type="password" id="confirmar_senha" name="confirmar_senha" class="form-input" placeholder="Confirme sua senha" required>
                 </div>
                 <div class="form-group">
-                    <label for="area_interesse" class="form-label">Área de Interesse</label>
-                    <select id="area_interesse" name="area_interesse" class="form-input" required>
-                        <option value="">Selecione uma área</option>
-                        <option value="programacao">Programação</option>
-                        <option value="design">Design</option>
-                        <option value="banco_dados">Banco de Dados</option>
-                        <option value="redes">Redes</option>
-                        <option value="hardware">Hardware</option>
-                        <option value="outros">Outros</option>
-                    </select>
+                    <h4 class="interesse-text">Interesse</h4>
+                    <div class="interesse">
+                        <div class="interesse-esquerda">
+                            <div class="interesse-disciplina">
+                                <input type="checkbox" name="interesse" id="interesse-artes" value="artes"> 
+                                <label for="interesse-artes">Artes</label>
+                            </div>
+                            <div class="interesse-disciplina">
+                                <input type="checkbox" name="interesse" id="interesse-biologia" value="biologia"> 
+                                <label for="interesse-biologia">Biologia</label>
+                            </div>
+                            <div class="interesse-disciplina">
+                                <input type="checkbox" name="interesse" id="interesse-filosofia" value="filosofia">  
+                                <label for="interesse-filosofia">Filosofia</label>
+                            </div>
+                            <div class="interesse-disciplina">
+                                <input type="checkbox" name="interesse" id="interesse-fisica" value="fisica"> 
+                                <label for="interesse-fisica">Física</label>
+                            </div>
+                            <div class="interesse-disciplina">
+                                <input type="checkbox" name="interesse" id="interesse-geografia" value="geografia"> 
+                                <label for="interesse-geografia">Geografia</label>
+                            </div>
+                        </div>
+                        <div class="interesse-meio">
+                            <div class="interesse-disciplina">
+                                <input type="checkbox" name="interesse" id="interesse-historia" value="historia"> 
+                                <label for="interesse-historia">História</label>
+                            </div>
+                            <div class="interesse-disciplina">
+                                <input type="checkbox" name="interesse" id="interesse-estrangeira" value="lingua-estrangeira"> 
+                                <label for="interesse-estrangeira">Língua Estrangeira</label>
+                            </div>
+                            <div class="interesse-disciplina">
+                                <input type="checkbox" name="interesse" id="interesse-matematica" value="matematica"> 
+                                <label for="interesse-matematica">Matemática</label>
+                            </div>
+                        </div>
+                        <div class="interesse-direita">
+                            <div class="interesse-disciplina">
+                                <input type="checkbox" name="interesse" id="interesse-portugues" value="portugues"> 
+                                <label for="interesse-portugues">Português</label>
+                            </div>
+                            <div class="interesse-disciplina">
+                                <input type="checkbox" name="interesse" id="interesse-quimica" value="quimica"> 
+                                <label for="interesse-quimica">Química</label>
+                            </div>
+                            <div class="interesse-disciplina">
+                                <input type="checkbox" name="interesse" id="interesse-redacao" value="redacao"> 
+                                <label for="interesse-redacao">Redação</label>
+                            </div>
+                            <div class="interesse-disciplina">
+                                <input type="checkbox" name="interesse" id="interesse-sociologia" value="sociologia"> 
+                                <label for="interesse-sociologia">Sociologia</label>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="form-group">
                     <input type="checkbox" id="termos" name="termos" required>
@@ -103,7 +150,7 @@
                 <h3>Contato</h3>
                 <ul>
                     <li><i class="fas fa-envelope"></i> contato@tutoriae.com</li>
-                    <li><i class="fas fa-phone"></i> (11) 99999-9999</li>
+                    <li><i class="fas fa-phone"></i> (43) 99999-9999</li>
                     <li><i class="fas fa-map-marker-alt"></i> Cornélio Procópio, PR</li>
                 </ul>
             </div>

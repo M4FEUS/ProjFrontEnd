@@ -140,22 +140,6 @@ nav a.active {
     color: var(--cor-texto);
 }
 
-/* Menu mobile */
-.menu-toggle {
-    display: none;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 30px;
-    height: 21px;
-    cursor: pointer;
-}
-
-.menu-toggle span {
-    height: 3px;
-    width: 100%;
-    background-color: var(--cor-clara);
-    border-radius: 3px;
-}
 
 /* Container principal */
 .container {
@@ -308,6 +292,24 @@ section {
     outline: none;
     border-color: var(--cor-primaria);
     box-shadow: 0 0 0 2px rgba(0, 119, 255, 0.2);
+}
+
+.interesse {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.interesse-text {
+    font-size: 1.1rem;
+    font-weight: 560;
+}
+
+.interesse-direita, .interesse-meio, .interesse-esquerda {
+    display: flex;
+    gap: 1rem;
 }
 
 /* Destaque */

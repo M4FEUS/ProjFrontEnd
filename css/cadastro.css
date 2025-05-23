@@ -171,7 +171,7 @@ form h4 {
     transition: ease 0.3s;
 }
 
-.expertise-disciplina {
+.interesse-disciplina {
     font-size: 0.9rem;
 }
 
@@ -203,7 +203,7 @@ button:hover {
     transition: ease 0.3s;
 }
 
-.expertise {
+.interesse {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -211,7 +211,7 @@ button:hover {
     gap: 1rem;
 }
 
-.expertise-direita, .expertise-meio, .expertise-esquerda {
+.interesse-direita, .interesse-meio, .interesse-esquerda {
     display: flex;
     gap: 1rem;
 }

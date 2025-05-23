@@ -22,11 +22,12 @@
             <div class="logo">
                 <img src="/Assets/logos/logo-tutoriae-header.png" alt="Logo Tutoriaê">
             </div>
-            <div class="menu-toggle">
+            <input type="checkbox" id="menu-toggle" class="menu-toggle-checkbox">
+            <label for="menu-toggle" class="menu-toggle">
                 <span></span>
                 <span></span>
                 <span></span>
-            </div>
+            </label>
             <nav>
                 <ul>
                     <li><a href="home.html">Home</a></li>
@@ -318,16 +319,5 @@
             <p>© 2025 Tutoriaê - ODS 4: Educação de Qualidade</p>
         </div>
     </footer>
-
-    <!-- JavaScript -->
-    <script>
-        // Menu mobile toggle
-        const menuToggle = document.querySelector('.menu-toggle');
-        const navMenu = document.querySelector('nav ul');
-        
-        menuToggle.addEventListener('click', () => {
-            navMenu.classList.toggle('active');
-        });
-    </script>
 </body>
 </html>

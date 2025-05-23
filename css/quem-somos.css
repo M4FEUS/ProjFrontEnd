@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+
 button {
     color: #FFF;
     background-color: var(--azul-tutoriae);
@@ -42,7 +44,10 @@ section, .quemsomos, .Contato, .Mapa {
 }
 
 h1, h2 {
-  font-family: 'Roboto', 'Open Sans', Arial, sans-serif;
+  font-family: 'Playfair Display', serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
   color: var(--azul-tutoriae, #0d2c46);
   margin-bottom: 1rem;
 }

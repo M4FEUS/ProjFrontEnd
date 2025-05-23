@@ -6,104 +6,280 @@
     <title>Tutoriaê - Quem Somos</title>
 
     <!-- links -->
-    <link rel="stylesheet" href="css/quem-somos.css">
-    <link rel="shortcut icon" href="Assets/logos/logo-tutoriae.png">
+    <!-- <link rel="stylesheet" href="css/quem-somos.css"> -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="Assets/logos/logo-tutoriae-branco.png">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 
 <body>
+    <!-- Cabeçalho -->
     <header>
-        <a href="home.html"><img src="Assets/logos/logo-tutoriae-header.png" alt="Logo Tutoriaê" width="150"></a>
-        <nav class="nav-header">
-            <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="nossos-cursos.html">Nossos Cursos</a></li>
-                <li class="pagina-atual">Quem Somos</li>
-            </ul>
-        </nav>
-
-        <div class="icons-header">
-            <div class="icons-header-search">
-                <a href=""><i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i></a>
-                <div class="dropdown">
-                    <a href="nossos-cursos.html#artes">Artes</a>
-                    <a href="nossos-cursos.html#biologia">Biologia</a>
-                    <a href="nossos-cursos.html#filosofia">Filosofia</a>
-                    <a href="nossos-cursos.html#fisica">Física</a>
-                    <a href="nossos-cursos.html#geografia">Geografia</a>
-                    <a href="nossos-cursos.html#historia">História</a>
-                    <a href="nossos-cursos.html#estrangeira">Língua Estrangeira</a>
-                    <a href="nossos-cursos.html#matematica">Matemática</a>
-                    <a href="nossos-cursos.html#portugues">Português</a>
-                    <a href="nossos-cursos.html#quimica">Química</a>
-                    <a href="nossos-cursos.html#redacao">Redação</a>
-                    <a href="nossos-cursos.html#sociologia">Sociologia</a>
-                </div>
+        <div class="header-container">
+            <div class="logo">
+                <img src="/Assets/logos/logo-tutoriae-header.png" alt="Logo Tutoriaê">
             </div>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="nossos-cursos.html">Nossos Cursos</a></li>
+                    <li><a href="quem-somos.html" class="active">Quem Somos</a></li>
+                    <li><a href="quem-somos.html#contato">Entre em Contato</a></li>
+                </ul>
+            </nav>
 
-            <div class="icons-header-search">
-                <a href=""><i class="fa-solid fa-user" style="color: #ffffff;"></i></a>
-                <div class="dropdown">
-                    <ul>
-                        <li>usuário</li>
-                        <li>(Estudante ou Voluntário)</li>
-                    </ul>
-                    <a href="index.html" style="color: var(--laranja-tutoriae);">Sair</a>
+            <div class="icons-header">
+                <div class="icons-header-search">
+                    <a href=""><i class="fa-solid fa-magnifying-glass" style="color: #FFF"></i></a>
+                    <div class="dropdown">
+                        <a class="dropdown-item" href="nossos-cursos.html#artes">Artes</a>
+                        <a class="dropdown-item" href="nossos-cursos.html#biologia">Biologia</a>
+                        <a class="dropdown-item" href="nossos-cursos.html#cursos-especiais">Cursos Especiais</a>
+                        <a class="dropdown-item" href="nossos-cursos.html#filosofia">Filosofia</a>
+                        <a class="dropdown-item" href="nossos-cursos.html#fisica">Física</a>
+                        <a class="dropdown-item" href="nossos-cursos.html#geografia">Geografia</a>
+                        <a class="dropdown-item" href="nossos-cursos.html#historia">História</a>
+                        <a class="dropdown-item" href="nossos-cursos.html#estrangeira">Língua Estrangeira</a>
+                        <a class="dropdown-item" href="nossos-cursos.html#matematica">Matemática</a>
+                        <a class="dropdown-item" href="nossos-cursos.html#portugues">Português</a>
+                        <a class="dropdown-item" href="nossos-cursos.html#quimica">Química</a>
+                        <a class="dropdown-item" href="nossos-cursos.html#redacao">Redação</a>
+                        <a class="dropdown-item" href="nossos-cursos.html#sociologia">Sociologia</a>
+                    </div>
+                </div>
+
+                <div class="icons-header-user">
+                    <a href=""><i class="fa-solid fa-user" style="color: #FFF"></i></a>
+                    <div class="dropdown">
+                        <ul>
+                            <li>Nome</li>
+                            <li>E-mail</li>
+                        </ul>
+                        <a href="index.html" style="color: red;">Sair</a>
+                    </div>
                 </div>
             </div>
         </div>
     </header>
-<main>
-     <section>
-        <div class="quemsomos">
-            <h1>QUEM SOMOS?</h1>
-        <p>Somos a Tutoriaê, uma iniciativa criada por jovens que acreditam no poder da educação gratuita, acessível e transformadora. 
-            Nosso objetivo é conectar estudantes de todo o Brasil com voluntários dispostos a ajudar, 
-           criando uma rede de apoio focada na preparação para o ENEM.
-           Sabemos que estudar sozinho pode ser difícil. Por isso, unimos forças para tornar o caminho mais leve, mais humano e mais colaborativo. Aqui, cada dúvida importa. 
-           Cada conquista é celebrada. E cada estudante é valorizado por sua jornada.</p>
+
+    <!-- Destaque Principal -->
+    <section class="highlight">
+        <h1 class="highlight-title">Quem Somos</h1>
+        <p class="highlight-text">Conheça nossa <b>história</b>, <b>equipe</b> e <b>missão e valores</b> que guiam nosso trabalho.</p>
+    </section>
+
+    <!-- Conteúdo Principal -->
+    <main class="container">
+        <!-- Sobre Nós -->
+        <section>
+            <h2 class="section-title">Nossa História</h2>
+            <div class="card" style="padding: 2rem; margin-bottom: 3rem;">
+                <div class="card-content">
+                    <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 1.5rem;">
+                        Somos a <span style="color: var(--cor-primaria); font-weight: bold;">Tutoriaê</span>, uma iniciativa criada por jovens que acreditam no poder da educação <span>gratuita</span>, <span>acessível</span> e <span>transformadora</span>. 
+                        Nosso objetivo é conectar estudantes de todo o Brasil com voluntários dispostos a ajudar, 
+                        criando uma rede de apoio focada na preparação para o ENEM.
+                    </p>
+                    <p style="font-size: 1.1rem; line-height: 1.8;">
+                        Sabemos que estudar sozinho pode ser difícil. Por isso, unimos forças para tornar o caminho mais <span>leve</span>, mais <span>humano</span> e mais <span>colaborativo</span>. Aqui, cada dúvida importa. 
+                        Cada conquista é celebrada. E cada estudante é valorizado por sua jornada.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Missão, Visão e Valores -->
+        <section>
+            <h2 class="section-title">Missão, Visão e Valores</h2>
+            <div style="display: flex; flex-wrap: wrap; gap: 2rem; margin-bottom: 3rem;">
+                <!-- Missão -->
+                <div class="card" style="flex: 1; min-width: 300px;">
+                    <div class="card-content" style="text-align: center;">
+                        <i class="fas fa-bullseye fa-3x" style="color: var(--cor-primaria); margin-bottom: 1rem;"></i>
+                        <h3 class="card-title">Missão</h3>
+                        <p class="card-text">Democratizar o acesso à educação de qualidade, conectando estudantes e voluntários em uma rede de apoio colaborativa e gratuita.</p>
+                    </div>
+                </div>
+                
+                <!-- Visão -->
+                <div class="card" style="flex: 1; min-width: 300px;">
+                    <div class="card-content" style="text-align: center;">
+                        <i class="fas fa-eye fa-3x" style="color: var(--cor-primaria); margin-bottom: 1rem;"></i>
+                        <h3 class="card-title">Visão</h3>
+                        <p class="card-text">Ser reconhecida como a principal plataforma de conexão entre estudantes e voluntários, transformando a educação no Brasil através da colaboração.</p>
+                    </div>
+                </div>
+                
+                <!-- Valores -->
+                <div class="card" style="flex: 1; min-width: 300px;">
+                    <div class="card-content" style="text-align: center;">
+                        <i class="fas fa-heart fa-3x" style="color: var(--cor-primaria); margin-bottom: 1rem;"></i>
+                        <h3 class="card-title">Valores</h3>
+                        <p class="card-text">Colaboração, Empatia, Acessibilidade, Qualidade, Compromisso e Transformação Social.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Nossa Equipe -->
+        <section>
+            <h2 class="section-title">Nossa Equipe</h2>
+            <div class="cards-container">
+                <!-- Membro - Livia -->
+                <div class="card">
+                    <div class="card-content" style="text-align: center;">
+                        <img class="equipe-membro" src="Assets/imagens/equipe/livia.png" alt="Equipe - Matheus">
+                        <h3 class="card-title">Lívia Rosa</h3>
+                        <p>Desenvolvedora do Projeto</p>
+                        <p class="card-text" style="margin-top: 1rem;">Estudante do 2º período de Engenharia de Software na UTFPR-CP. Responsável pela estrutura do site.</p>
+
+                        <div class="card-content-redes-sociais">
+                            <a href="https://github.com/LiviaRosaa" target="_blank"><i class="fab fa-github" style="color: var(--cor-primaria);"></i></a>
+                            <a href="https://www.linkedin.com/in/liviaadeev/" target="_blank"><i class="fab fa-linkedin" style="color: var(--cor-primaria);"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Membro - Matheus -->
+                <div class="card">
+                    <div class="card-content" style="text-align: center;">
+                        <img class="equipe-membro" src="Assets/imagens/equipe/matheus.png" alt="Equipe - Matheus">
+                        <h3 class="card-title">Matheus Ernandes</h3>
+                        <p>Desenvolvedor do Projeto</p>
+                        <p class="card-text" style="margin-top: 1rem;">Estudante do 5º período de Engenharia de Computação na UTFPR-CP. Responsável pelo projeto e layout do site.</p>
+
+                        <div class="card-content-redes-sociais">
+                            <a href="https://github.com/M4FEUS" target="_blank"><i class="fab fa-github" style="color: var(--cor-primaria);"></i></a>
+                            <a href="https://www.linkedin.com/in/matheus-roberto-ernandes-186842234/" target="_blank"><i class="fab fa-linkedin"  style="color: var(--cor-primaria);"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Membro - Steffane -->
+                <div class="card">
+                    <div class="card-content" style="text-align: center;">
+                        <img class="equipe-membro" src="Assets/imagens/equipe/steffane.jpg" alt="Equipe - Stéffane">
+                        <h3 class="card-title">Stéffane Leal</h3>
+                        <p>Desenvolvedora do Projeto</p>
+                        <p class="card-text" style="margin-top: 1rem;">Estudante do 5º período de Engenharia de Computação na UTFPR-CP. Responsável pela estilização do site.</p>
+                        <div class="card-content-redes-sociais">
+                            <a href="https://github.com/steffaneleal" target="_blank"><i class="fab fa-github" style="color: var(--cor-primaria);"></i></a>
+                            <a href="https://www.linkedin.com/in/steffane-leal-287873223/" target="_blank"><i class="fab fa-linkedin" style="color: var(--cor-primaria);"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Localização -->
+        <section>
+            <h2 class="section-title">Onde Estamos</h2>
+            <div class="card" style="padding: 0; overflow: hidden; margin-bottom: 3rem;">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14669.710327318515!2d-50.64939910673253!3d-23.19108311913484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94eadf19f06f311f%3A0x8a2e7a0e8621b0f3!2sUTFPR%20Corn%C3%A9lio%20Proc%C3%B3pio!5e0!3m2!1spt-BR!2sbr!4v1747686723804!5m2!1spt-BR!2sbr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+
+        <!-- Formulário de Contato -->
+        <section id="contato">
+            <h2 class="section-title">Entre em Contato</h2>
+            <div class="card" style="padding: 2rem;">
+                <form class="form-container" style="box-shadow: none; padding: 0;">
+                    <div class="form-group">
+                        <label for="nome" class="form-label">Nome Completo</label>
+                        <input type="text" id="nome" name="nome" class="form-input" placeholder="Seu nome completo" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="form-label">E-mail</label>
+                        <input type="email" id="email" name="email" class="form-input" placeholder="Seu melhor e-mail" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="telefone" class="form-label">Telefone</label>
+                        <input type="tel" id="telefone" name="telefone" class="form-input" placeholder="(XX) XXXXX-XXXX" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="mensagem" class="form-label">Mensagem</label>
+                        <textarea id="mensagem" name="mensagem" class="form-input" rows="5" placeholder="Digite sua mensagem aqui..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Enviar Mensagem</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Feedback -->
+        <section>
+            <h2 class="section-title">Deixe seu Feedback</h2>
+            <div class="card" style="padding: 2rem; display: flex; flex-wrap: wrap; gap: 2rem; align-items: center;">
+                <div style="flex: 1; min-width: 300px;">
+                    <img src="/Assets/imagens/disciplinas/feedback.png" alt="Feedback" style="width: 75%; border-radius: 50rem;">
+                </div>
+                <div style="flex: 1; min-width: 300px;">
+                    <h3 style="margin-bottom: 1rem;">Ficaremos felizes com seu feedback!</h3>
+                    <p style="margin-bottom: 1.5rem;">Sua opinião é muito importante para continuarmos melhorando nossa plataforma.</p>
+                    <form class="form-container" style="box-shadow: none; padding: 0;">
+                        <div class="form-group">
+                            <textarea id="feedback" name="feedback" class="form-input" rows="5" placeholder="Compartilhe sua experiência com a Tutoriaê..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Enviar Feedback</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-info">
+                <div class="footer-logo">Tutoriaê</div>
+                <p>Conectando voluntários e estudantes para um futuro melhor.</p>
+                <div class="social-icons" style="margin-top: 1rem;">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-links">
+                <h3>Links Rápidos</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="cursos.html">Nossos Cursos</a></li>
+                    <li><a href="quem-somos.html">Quem Somos</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-links">
+                <h3>Cursos</h3>
+                <ul>
+                    <li><a href="#matematica">Matemática</a></li>
+                    <li><a href="#portugues">Português</a></li>
+                    <li><a href="#redacao">Redação</a></li>
+                    <li><a href="#trilha-enem">Trilha ENEM</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-links">
+                <h3>Contato</h3>
+                <ul>
+                    <li><i class="fas fa-envelope"></i> contato@tutoriae.com</li>
+                    <li><i class="fas fa-phone"></i> (11) 99999-9999</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Cornélio Procópio, PR</li>
+                </ul>
+            </div>
         </div>
-    </section>
-
-    <section>
-        <div class="Contato">
-        <h1>Faça contato com a gente!!</h1>
-        <p>Tá fácil! ficaremos feliz com seu feedback também!!</p>
-        <img src="Assets/Feedback.jpg" alt="feedback">
-        <form>
-         <textarea name="description" id="description" cols="30" rows="10" placeholder="De seu feedback"></textarea>
-        <button type="submit">Enviar</button>
-        </form>
-       </div>
-    </section>
- 
-    <section>
-        <div class="Mapa">
-            <h1>Aonde estamos localizados</h1>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14669.710327318515!2d-50.64939910673253!3d-23.19108311913484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94eadf19f06f311f%3A0x8a2e7a0e8621b0f3!2sUTFPR%20Corn%C3%A9lio%20Proc%C3%B3pio!5e0!3m2!1spt-BR!2sbr!4v1747686723804!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-
-    </iframe>
-    </div>
-    </section>
-
-<form>
-    <h1>Entre em contato conosco</h1>
-        <input type="text" name="name" id="name" placeholder="Nome">
-        <input type="email" name="email" id="email" placeholder="Email">
-        <input type="tel" name="tel" id="tel" placeholder="Telefone (XX) XXXX-XXXX">
-        <textarea name="description" id="description" cols="30" rows="10" placeholder="Insira sua mensagem"></textarea>
-        <button type="submit">Enviar</button>
-</form>
-</main>   
- <footer>
-        <div class="curriculos">
-            <a href="#"><i class="fab fa-linkedin"></i> João Silva</a>
-            <a href="#"><i class="fab fa-github"></i> Maria Souza</a>
-            <a href="#"><i class="fab fa-github"></i> Livia Rosa</a>
+        
+        <div class="footer-bottom">
+            <p>© 2025 Tutoriaê - ODS 4: Educação de Qualidade</p>
         </div>
-        <p>© 2025 Tutoriaê - ODS 4: Educação de Qualidade</p>
     </footer>
 </body>
 </html>

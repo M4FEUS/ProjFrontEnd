@@ -7,194 +7,327 @@
     <title>Tutoriaê - Nossos Cursos</title>
 
     <!-- links -->
-    <link rel="stylesheet" href="css/nossos-cursos.css">
-    <link rel="shortcut icon" href="Assets/logos/logo-tutoriae.png">
+    <!-- <link rel="stylesheet" href="css/nossos-cursos.css"> -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="Assets/logos/logo-tutoriae-branco.png">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 
 <body>
+    <!-- Cabeçalho -->
     <header>
-        <a href="home.html"><img src="Assets/logos/logo-tutoriae-header.png" alt="Logo Tutoriaê" width="150"></a>
-        <nav class="nav-header">
-            <ul>
-                <li><a href="home.html">Home</a></li>
-                <li class="pagina-atual">Nossos Cursos</a></li>
-                <li><a href="quem-somos.html">Quem Somos</a></li>
-            </ul>
-        </nav>
-
-        <div class="icons-header">
-            <div class="icons-header-search">
-                <a href=""><i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i></a>
-                <div class="dropdown">
-                    <a href="nossos-cursos.html#artes">Artes</a>
-                    <a href="nossos-cursos.html#biologia">Biologia</a>
-                    <a href="nossos-cursos.html#filosofia">Filosofia</a>
-                    <a href="nossos-cursos.html#fisica">Física</a>
-                    <a href="nossos-cursos.html#geografia">Geografia</a>
-                    <a href="nossos-cursos.html#historia">História</a>
-                    <a href="nossos-cursos.html#estrangeira">Língua Estrangeira</a>
-                    <a href="nossos-cursos.html#matematica">Matemática</a>
-                    <a href="nossos-cursos.html#portugues">Português</a>
-                    <a href="nossos-cursos.html#quimica">Química</a>
-                    <a href="nossos-cursos.html#redacao">Redação</a>
-                    <a href="nossos-cursos.html#sociologia">Sociologia</a>
-                </div>
+        <div class="header-container">
+            <div class="logo">
+                <img src="/Assets/logos/logo-tutoriae-header.png" alt="Logo Tutoriaê">
             </div>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="nossos-cursos.html" class="active">Nossos Cursos</a></li>
+                    <li><a href="quem-somos.html">Quem Somos</a></li>
+                    <li><a href="quem-somos.html#contato">Entre em Contato</a></li>
+                </ul>
+            </nav>
 
-            <div class="icons-header-search">
-                <a href=""><i class="fa-solid fa-user" style="color: #ffffff;"></i></a>
-                <div class="dropdown">
-                    <ul>
-                        <li>usuário</li>
-                        <li>(Estudante ou Voluntário)</li>
-                    </ul>
-                    <a href="index.html" style="color: var(--laranja-tutoriae);">Sair</a>
+            <div class="icons-header">
+                <div class="icons-header-search">
+                    <a href=""><i class="fa-solid fa-magnifying-glass" style="color: #FFF"></i></a>
+                    <div class="dropdown">
+                        <a class="dropdown-item" href="nossos-cursos.html#artes">Artes</a>
+                        <a class="dropdown-item" href="nossos-cursos.html#biologia">Biologia</a>
+                        <a class="dropdown-item" href="nossos-cursos.html#cursos-especiais">Cursos Especiais</a>
+                        <a class="dropdown-item" href="nossos-cursos.html#filosofia">Filosofia</a>
+                        <a class="dropdown-item" href="nossos-cursos.html#fisica">Física</a>
+                        <a class="dropdown-item" href="nossos-cursos.html#geografia">Geografia</a>
+                        <a class="dropdown-item" href="nossos-cursos.html#historia">História</a>
+                        <a class="dropdown-item" href="nossos-cursos.html#estrangeira">Língua Estrangeira</a>
+                        <a class="dropdown-item" href="nossos-cursos.html#matematica">Matemática</a>
+                        <a class="dropdown-item" href="nossos-cursos.html#portugues">Português</a>
+                        <a class="dropdown-item" href="nossos-cursos.html#quimica">Química</a>
+                        <a class="dropdown-item" href="nossos-cursos.html#redacao">Redação</a>
+                        <a class="dropdown-item" href="nossos-cursos.html#sociologia">Sociologia</a>
+                    </div>
+                </div>
+
+                <div class="icons-header-user">
+                    <a href=""><i class="fa-solid fa-user" style="color: #FFF"></i></a>
+                    <div class="dropdown">
+                        <ul>
+                            <li>Nome</li>
+                            <li>E-mail</li>
+                        </ul>
+                        <a href="index.html" style="color: red;">Sair</a>
+                    </div>
                 </div>
             </div>
         </div>
     </header>
-    <main>
-        <section id="disciplinas-oferecidas">
-            <h1>Disciplinas oferecidas</h1>
-            <div class="disciplinas-containers">
-                <div class="container-opcao">
-                    <h4 class="titulo">Artes</h4>
-                    <img class="curso-opcao" src="Assets/imagens/disciplinas/artes.png" alt="artes" style="width: 300px; height: 200px;">
+
+    <!-- Destaque Principal -->
+    <section class="highlight">
+        <h1 class="highlight-title">Nossos Cursos</h1>
+        <p class="highlight-text">Conheça todas as disciplinas e cursos disponíveis para turbinar sua preparação para o <b>ENEM</b>.</p>
+    </section>
+
+    <!-- Conteúdo Principal -->
+    <main class="container">
+        <!-- Disciplinas Oferecidas -->
+        <section>
+            <h2 class="section-title">Disciplinas Oferecidas</h2>
+            <div class="cards-container">
+                <!-- Disciplina - Artes -->
+                <div class="card" id="artes">
+                    <div class="card-content">
+                        <h3 class="card-title">Artes</h3>
+                        <img src="Assets/imagens/disciplinas/artes.png" alt="Artes" class="card-img">
+                        <p class="card-text">Explore a história da arte, técnicas de criação e expressão artística em diversas manifestações.</p>
+                        <a href="#" class="btn">Ver Detalhes</a>
+                    </div>
                 </div>
 
-                <div class="container-opcao">
-                    <h4 class="titulo">Biologia</h4>
-                    <img class="curso-opcao" src="Assets/imagens/disciplinas/biologia.png" alt="artes" style="width: 300px; height: 200px;">
+                <!-- Disciplina - Biologia -->
+                <div class="card">
+                    <div class="card-content" id="biologia">
+                        <h3 class="card-title">Biologia</h3>
+                        <img src="Assets/imagens/disciplinas/biologia.png" alt="Biologia" class="card-img">
+                        <p class="card-text">Entenda a vida, seus processos, a biodiversidade e a interação dos seres vivos com o ambiente.</p>
+                        <a href="#" class="btn">Ver Detalhes</a>
+                    </div>
                 </div>
 
-                <div class="container-opcao">
-                    <h4 class="titulo">Filosofia</h4>
-                    <img class="curso-opcao" src="Assets/imagens/disciplinas/filosofia.png" alt="artes" style="width: 300px; height: 200px;">
+                <!-- Disciplina - Filosofia -->
+                <div class="card">
+                    <div class="card-content" id="filosofia">
+                        <h3 class="card-title">Filosofia</h3>
+                        <img src="Assets/imagens/disciplinas/filosofia.png" alt="Filosofia" class="card-img">
+                        <p class="card-text">Questione, reflita e compreenda os grandes pensadores e as correntes de pensamento que moldaram a humanidade.</p>
+                        <a href="#" class="btn">Ver Detalhes</a>
+                    </div>
+                </div>
+
+                <!-- Disciplina - Física -->
+                <div class="card" id="fisica">
+                    <div class="card-content">
+                        <h3 class="card-title">Física</h3>
+                        <img src="Assets/imagens/disciplinas/fisica.png" alt="Física" class="card-img">
+                        <p class="card-text">Desvende as leis do universo, da mecânica à eletricidade, e entenda como o mundo funciona.</p>
+                        <a href="#" class="btn">Ver Detalhes</a>
+                    </div>
+                </div>
+
+                <!-- Disciplina - Geografia -->
+                <div class="card" id="geografia">
+                    <div class="card-content">
+                        <h3 class="card-title">Geografia</h3>
+                        <img src="Assets/imagens/disciplinas/geografia.png" alt="Geografia" class="card-img">
+                        <p class="card-text">Analise o espaço geográfico, as relações humanas com o ambiente e os fenômenos naturais e sociais.</p>
+                        <a href="#" class="btn">Ver Detalhes</a>
+                    </div>
+                </div>
+
+                <!-- Disciplina - História -->
+                <div class="card" id="historia">
+                    <div class="card-content">
+                        <h3 class="card-title">História</h3>
+                        <img src="Assets/imagens/disciplinas/historia.png" alt="História" class="card-img">
+                        <p class="card-text">Conheça o passado, seus eventos e personagens, para compreender o presente e projetar o futuro.</p>
+                        <a href="#" class="btn">Ver Detalhes</a>
+                    </div>
+                </div>
+
+                <!-- Disciplina - Língua Estrangeira -->
+                <div class="card" id="estrangeira">
+                    <div class="card-content">
+                        <h3 class="card-title">Língua Estrangeira</h3>
+                        <img src="Assets/imagens/disciplinas/estrangeira.png" alt="Língua Estrangeira" class="card-img">
+                        <p class="card-text">Aprenda um novo idioma, sua cultura e amplie suas oportunidades de comunicação global.</p>
+                        <a href="#" class="btn">Ver Detalhes</a>
+                    </div>
+                </div>
+
+                <!-- Disciplina - Matemática -->
+                <div class="card" id="matematica">
+                    <div class="card-content">
+                        <h3 class="card-title">Matemática</h3>
+                        <img src="Assets/imagens/disciplinas/matematica.png" alt="Matemática" class="card-img">
+                        <p class="card-text">Aprenda cálculos, funções, geometria e estatística com métodos simplificados e práticos.</p>
+                        <a href="#" class="btn">Ver Detalhes</a>
+                    </div>
+                </div>
+
+                <!-- Disciplina - Português -->
+                <div class="card" id="portugues">
+                    <div class="card-content">
+                        <h3 class="card-title">Português</h3>
+                        <img src="Assets/imagens/disciplinas/portugues.png" alt="Português" class="card-img">
+                        <p class="card-text">Desenvolva habilidades de leitura crítica, interpretação textual e gramática aplicada.</p>
+                        <a href="#" class="btn">Ver Detalhes</a>
+                    </div>
+                </div>
+
+                <!-- Disciplina - Química -->
+                <div class="card" id="quimica">
+                    <div class="card-content">
+                        <h3 class="card-title">Química</h3>
+                        <img src="Assets/imagens/disciplinas/quimica.png" alt="Química" class="card-img">
+                        <p class="card-text">Explore a composição da matéria, suas transformações e as reações que ocorrem ao nosso redor.</p>
+                        <a href="#" class="btn">Ver Detalhes</a>
+                    </div>
+                </div>
+
+                <!-- Disciplina - Redação -->
+                <div class="card" id="redacao">
+                    <div class="card-content">
+                        <h3 class="card-title">Redação</h3>
+                        <img src="/Assets/imagens/disciplinas/redacao.png" alt="Redação" class="card-img">
+                        <p class="card-text">Aprenda a estruturar uma redação nota 1000 com técnicas de argumentação e repertório.</p>
+                        <a href="#" class="btn">Ver Detalhes</a>
+                    </div>
+                </div>
+
+                <!-- Disciplina - Sociologia -->
+                <div class="card" id="sociologia">
+                    <div class="card-content">
+                        <h3 class="card-title">Sociologia</h3>
+                        <img src="Assets/imagens/disciplinas/sociologia.png" alt="Sociologia" class="card-img">
+                        <p class="card-text">Entenda as relações sociais, as estruturas da sociedade e os fenômenos que a moldam.</p>
+                        <a href="#" class="btn">Ver Detalhes</a>
+                    </div>
                 </div>
             </div>
-
-            <div class="disciplinas-containers">
-                <div class="container-opcao">
-                    <h4 class="titulo">Física</h4>
-                    <img class="curso-opcao" src="Assets/imagens/disciplinas/fisica.png" alt="artes" style="width: 300px; height: 200px;">
-                </div>
-
-                <div class="container-opcao">
-                    <h4 class="titulo">Geografia</h4>
-                    <img class="curso-opcao" src="Assets/imagens/disciplinas/geografia.png" alt="artes" style="width: 300px; height: 200px;">
-                </div>
-
-                <div class="container-opcao">
-                    <h4 class="titulo">História</h4>
-                    <img class="curso-opcao" src="Assets/imagens/disciplinas/historia.png" alt="artes" style="width: 300px; height: 200px;">
-                </div>
-            </div>
-
-            <div class="disciplinas-containers">
-                <div class="container-opcao">
-                    <h4 class="titulo">Línguas Estrangeiras</h4>
-                    <img class="curso-opcao" src="Assets/imagens/disciplinas/lingua-estrangeira.png" alt="artes" style="width: 300px; height: 200px;">
-                </div>
-
-                <div class="container-opcao">
-                    <h4 class="titulo">Matemática</h4>
-                    <img class="curso-opcao" src="Assets/imagens/disciplinas/matematica.png" alt="artes" style="width: 300px; height: 200px;">
-                </div>
-
-                <div class="container-opcao">
-                    <h4 class="titulo">Português</h4>
-                    <img class="curso-opcao" src="Assets/imagens/disciplinas/portugues.png" alt="artes" style="width: 300px; height: 200px;">
-                </div>  
-            </div>
-
-            <div class="disciplinas-containers">
-                <div class="container-opcao">
-                    <h4 class="titulo">Química</h4>
-                    <img class="curso-opcao" src="Assets/imagens/disciplinas/quimica.png" alt="artes" style="width: 300px; height: 200px;">
-                </div>
-
-                <div class="container-opcao">
-                    <h4 class="titulo">Redação</h4>
-                    <img class="curso-opcao" src="Assets/imagens/disciplinas/redacao.png" alt="artes" style="width: 300px; height: 200px;">
-                </div>
-
-                <div class="container-opcao">
-                    <h4 class="titulo">Sociologia</h4>
-                    <img class="curso-opcao" src="Assets/imagens/disciplinas/sociologia.png" alt="artes" style="width: 300px; height: 200px;">
-                </div>  
-            </div>
-            
         </section>
 
-        <section>
-            <h1>Alguns dos nossos cursos que oferecemos a você!!</h1>
-            <div class="container-cursos">
-                <img class="cursos-opcao-1" src="Assets/organiza1.jpg" alt="organizar">
-                <div class="curso-descricao">
-                    <h4>Gestão de Tempo e Rotina para Estudantes</h4>
-                    <p>Aprenda técnicas de organização, planejamento semanal e uso de ferramentas como cronograma de
-                        estudos, métodos Pomodoro e mapas de produtividade.</p>
+        <!-- Cursos Especiais -->
+        <section id="cursos-especiais">
+            <h2 class="section-title">Cursos Especiais</h2>
+            
+            <!-- Curso 1 - Gestão de Tempo e Rotina para Estudantes -->
+            <div id="gestao-tempo" class="card" style="display: flex; flex-direction: row; margin-bottom: 2rem; overflow: hidden;">
+                <img src="/Assets/imagens/disciplinas/gestao-tempo-rotina.png" alt="Gestão de Tempo" style="width: 30%; object-fit: cover;">
+                <div class="card-content" style="width: 70%; padding: 2rem;">
+                    <h3 class="card-title">Gestão de Tempo e Rotina para Estudantes</h3>
+                    <p class="card-text">Aprenda técnicas de organização, planejamento semanal e uso de ferramentas como cronograma de estudos, métodos Pomodoro e mapas de produtividade.</p>
+                    <a href="#" class="btn" style="margin-top: 1rem;">Acessar Curso</a>
                 </div>
             </div>
-
-            <div class="container-cursos">
-                <img class="cursos-opcao-1" src="Assets/portugues.avif" alt="linguagens">
-                <div class="curso-descricao">
-                    <h4>Interpretação de Textos e Linguagens</h4>
-                    <p>Desenvolva habilidades de leitura crítica e interpretação textual. Curso voltado para textos
-                        literários, publicitários, gráficos e linguagem verbal-não verbal.</p>
+            
+            <!-- Curso 2 -  Interpretação de Textos e Linguagens -->
+            <div id="interpretacao-textos" class="card" style="display: flex; flex-direction: row; margin-bottom: 2rem; overflow: hidden;">
+                <img src="Assets/imagens/disciplinas/interpretacao.png" alt="Interpretação de Textos" style="width: 30%; object-fit: cover;">
+                <div class="card-content" style="width: 70%; padding: 2rem;">
+                    <h3 class="card-title">Interpretação de Textos e Linguagens</h3>
+                    <p class="card-text">Desenvolva habilidades de leitura crítica e interpretação textual. Curso voltado para textos literários, publicitários, gráficos e linguagem verbal-não verbal.</p>
+                    <a href="#" class="btn" style="margin-top: 1rem;">Acessar Curso</a>
                 </div>
             </div>
-
-            <div class="container-cursos">
-                <img class="cursos-opcao-1" src="Assets/fisica.webp" alt="fisica">
-                <div class="curso-descricao">
-                    <h4>Ciências da Natureza Descomplicadas</h4>
-                    <p>Curso completo de Química, Física e Biologia com foco no estilo do ENEM. Entenda os conceitos e
-                        resolva questões com interpretação e aplicação prática.</p>
+            
+            <!-- Curso 3 - Ciências da Natureza Descomplicadas -->
+            <div id="ciencias-natureza-descomplicada" class="card" style="display: flex; flex-direction: row; margin-bottom: 2rem; overflow: hidden;">
+                <img src="Assets/imagens/disciplinas/ciencias-natureza.png" alt="Ciências da Natureza" style="width: 30%; object-fit: cover;">
+                <div class="card-content" style="width: 70%; padding: 2rem;">
+                    <h3 class="card-title">Ciências da Natureza Descomplicadas</h3>
+                    <p class="card-text">Curso completo de Química, Física e Biologia com foco no estilo do ENEM. Entenda os conceitos e resolva questões com interpretação e aplicação prática.</p>
+                    <a href="#" class="btn" style="margin-top: 1rem;">Acessar Curso</a>
                 </div>
             </div>
-
-
-            <div class="container-cursos">
-                <img class="cursos-opcao-1" src="Assets/ansiedade.jpg" alt="ansiedade">
-                <div class="curso-descricao">
-                    <h4>Controle Emocional e Ansiedade na Preparação</h4>
-                    <p> Curso voltado para o bem-estar emocional do estudante, com estratégias de autocontrole,
-                        respiração, mindfulness e foco durante os estudos e provas.</p>
+            
+            <!-- Curso 4 - Controle Emocional e Ansiedade na Preparação -->
+            <div id="controle-emocional" class="card" style="display: flex; flex-direction: row; margin-bottom: 2rem; overflow: hidden;">
+                <img src="/Assets/imagens/disciplinas/controle-emocional.png" alt="Controle Emocional" style="width: 30%; object-fit: cover;">
+                <div class="card-content" style="width: 70%; padding: 2rem;">
+                    <h3 class="card-title">Controle Emocional e Ansiedade na Preparação</h3>
+                    <p class="card-text">Curso voltado para o bem-estar emocional do estudante, com estratégias de autocontrole, respiração, mindfulness e foco durante os estudos e provas.</p>
+                    <a href="#" class="btn" style="margin-top: 1rem;">Acessar Curso</a>
                 </div>
             </div>
-
-            <div class="container-cursos">
-                <img class="cursos-opcao-1" src="Assets/redacao-icone.jpg" alt="redacao-icone">
-                <div class="curso-descricao">
-                    <h4>Domine a Redação ENEM</h4>
-                    <p> Aprenda a estruturar uma redação nota 1000 com técnicas de argumentação, coesão e repertório
-                        sociocultural. Aulas práticas com correções detalhadas.</p>
+            
+            <!-- Curso 5 - Domine a Redação ENEM -->
+            <div id="domine-redacao" class="card" style="display: flex; flex-direction: row; margin-bottom: 2rem; overflow: hidden;">
+                <img src="Assets/imagens/disciplinas/domine-enem.png" alt="Redação ENEM" style="width: 30%; object-fit: cover;">
+                <div class="card-content" style="width: 70%; padding: 2rem;">
+                    <h3 class="card-title">Domine a Redação ENEM</h3>
+                    <p class="card-text">Aprenda a estruturar uma redação nota 1000 com técnicas de argumentação, coesão e repertório sociocultural. Aulas práticas com correções detalhadas.</p>
+                    <a href="#" class="btn" style="margin-top: 1rem;">Acessar Curso</a>
                 </div>
             </div>
-
-            <div class="container-cursos">
-                <img class="cursos-opcao-1" src="Assets/revisao.jpg" alt="revisao">
-                <div class="curso-descricao">
-                    <h4>Trilha ENEM Intensiva (Reta Final)</h4>
-                    <p>Revisão intensiva com os conteúdos mais cobrados, simulados comentados, mapas mentais e dicas
-                        para manter o foco e a estratégia na reta final da preparação.</p>
+            
+            <!-- Curso 6 - Trilha ENEM Intensiva (Reta Final) -->
+            <div id="trilha-enem" class="card" style="display: flex; flex-direction: row; overflow: hidden;">
+                <img src="Assets/imagens/disciplinas/trilha-enem.png" alt="Trilha ENEM" style="width: 30%; object-fit: cover;">
+                <div class="card-content" style="width: 70%; padding: 2rem;">
+                    <h3 class="card-title">Trilha ENEM Intensiva (Reta Final)</h3>
+                    <p class="card-text">Revisão intensiva com os conteúdos mais cobrados, simulados comentados, mapas mentais e dicas para manter o foco e a estratégia na reta final da preparação.</p>
+                    <a href="#" class="btn" style="margin-top: 1rem;">Acessar Curso</a>
                 </div>
             </div>
         </section>
     </main>
-    <footer>
-        <div class="curriculos">
-            <a href="#"><i class="fab fa-linkedin"></i> João Silva</a>
-            <a href="#"><i class="fab fa-github"></i> Maria Souza</a>
-            <a href="#"><i class="fab fa-github"></i> Livia Rosa</a>
-        </div>
-        <p>© 2025 Tutoriaê - ODS 4: Educação de Qualidade</p>
-    </footer>
-</body>
 
+    <!-- Rodapé -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-info">
+                <div class="footer-logo">Tutoriaê</div>
+                <p>Conectando voluntários e estudantes para um futuro melhor.</p>
+                <div class="social-icons" style="margin-top: 1rem;">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-links">
+                <h3>Links Rápidos</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="cursos.html">Nossos Cursos</a></li>
+                    <li><a href="quem-somos.html">Quem Somos</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-links">
+                <h3>Cursos</h3>
+                <ul>
+                    <li><a href="#matematica">Matemática</a></li>
+                    <li><a href="#portugues">Português</a></li>
+                    <li><a href="#redacao">Redação</a></li>
+                    <li><a href="#trilha-enem">Trilha ENEM</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-links">
+                <h3>Contato</h3>
+                <ul>
+                    <li><i class="fas fa-envelope"></i> contato@tutoriae.com</li>
+                    <li><i class="fas fa-phone"></i> (11) 99999-9999</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Cornélio Procópio, PR</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>© 2025 Tutoriaê - ODS 4: Educação de Qualidade</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Menu mobile toggle
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navMenu = document.querySelector('nav ul');
+        
+        menuToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+    </script>
+</body>
 </html>

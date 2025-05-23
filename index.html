@@ -6,7 +6,8 @@
     <title>Tutoriaê - Login</title>
   
     <!-- links -->
-    <link rel="stylesheet" href="css/login.css">
+     <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/login.css"> -->
     <link rel="shortcut icon" href="Assets/logos/logo-tutoriae.png">
 
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto&display=swap" rel="stylesheet">
@@ -14,36 +15,78 @@
 </head>
 <body>
     <header>
-        <a href="index.html"><img src="Assets/logos/logo-tutoriae-text.png" alt="Logo Tutoriaê Text" width="150"></a>
+        <div class="header-container">
+            <div class="logo">
+                <img src="Assets/logos/logo-tutoriae-text.png" alt="Logo Tutoriaê Text" width="150">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="cadastro-estudante.html">Cadastre-se</a></li>
+                    <div class="voluntario-dropdown">
+                        <li><a href="">Quer ser voluntário?</a></li>
+                        <div class="dropdown">
+                            <p>Para se voluntariar, mande e-mail para: <span style="color: var(--cor-primaria);"><b>contato@tutoriae.com</b></span></p>
+                        </div>
+                    </div>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <main>
-        <div class="logo">
-            <img src="Assets/logos/logo-tutoriae-fundo-branco.jpg" alt="Logo Tutoriaê fundo branco" width="350">
-        </div>
-
-        <div class="container">
-            <h1>Login</h1>
-            <form action="home.html" method="GET">
-                <label for="email">E-mail:</label>
-                <input type="email" id="email" name="email" placeholder="email@email.com" required>
-
-                <label for="senha">Senha:</label>
-                <input type="password" id="senha" name="senha" placeholder="senha" required>
-
-                <button type="submit" aria-label="Entrar na plataforma">Entrar</button>
+    <main class="container">
+            <div class="form-container">
+            <h2 class="form-title">Login</h2>
+            <form action="home.html" method="get">
+                <div class="form-group">
+                    <label for="email" class="form-label">E-mail</label>
+                    <input type="email" id="email" name="email" class="form-input" placeholder="Seu e-mail" required>
+                </div>
+                <div class="form-group">
+                    <label for="senha" class="form-label">Senha</label>
+                    <input type="password" id="senha" name="senha" class="form-input" placeholder="Sua senha" required>
+                </div>
+                <div class="form-group" style="display: flex; justify-content: space-between; align-items: center;">
+                    <div>
+                        <input type="checkbox" id="lembrar" name="lembrar">
+                        <label for="lembrar">Lembrar de mim</label>
+                    </div>
+                    <a href="#" style="color: var(--cor-primaria);">Esqueceu a senha?</a>
+                </div>
+                <button type="submit" class="btn" style="width: 100%;">Entrar</button>
             </form>
-            <p>Novo aqui? Cadastre-se</p>
-            <div class="novo-aqui-cad">
-                <a href="cadastro-voluntario.html"> Cadastro de Voluntário </a> 
-                | 
-                <a href="cadastro-estudante.html"> Cadastro de Estudante</a>
-            </div>
+            <p style="text-align: center; margin-top: 1.5rem;">
+                Não tem uma conta? <a href="cadastro-estudante.html" style="color: var(--cor-primaria);">Cadastre-se</a>
+            </p>
         </div>
     </main>
 
-    <footer>
-        <p>© 2025 Tutoriaê</p>
+        <footer>
+        <div class="footer-container">
+            <div class="footer-info">
+                <div class="footer-logo">Tutoriaê</div>
+                <p>Conectando voluntários e estudantes para um futuro melhor.</p>
+                <div class="social-icons" style="margin-top: 1rem;">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+
+            
+            <div class="footer-links">
+                <h3>Contato</h3>
+                <ul>
+                    <li><i class="fas fa-envelope"></i> contato@tutoriae.com</li>
+                    <li><i class="fas fa-phone"></i> (11) 99999-9999</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Cornélio Procópio, PR</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>© 2025 Tutoriaê - ODS 4: Educação de Qualidade</p>
+        </div>
     </footer>
 </body>
 </html>

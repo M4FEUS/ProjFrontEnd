@@ -61,7 +61,7 @@ header {
 }
 
 /* Navegação */
-nav ul {
+nav ul, .header-nav {
     display: flex;
     list-style: none;
     gap: 1.5rem;
@@ -230,6 +230,12 @@ section {
 .card-text {
     margin-bottom: 1rem;
     color: var(--cor-texto);
+}
+
+#localizacao iframe {
+    width: 100%; 
+    height: 450px;
+    border: 0;
 }
 
 /* Botões */

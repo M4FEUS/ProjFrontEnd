@@ -415,10 +415,6 @@ footer {
 
 /* Responsividade */
 @media (max-width: 768px) {
-    .menu-toggle {
-        display: flex;
-    }
-
     nav ul {
         position: fixed;
         top: 70px;
@@ -459,12 +455,6 @@ footer {
     .header-container {
         flex-direction: column;
         gap: 1rem;
-    }
-
-    .menu-toggle {
-        position: absolute;
-        top: 1.5rem;
-        right: 2rem;
     }
 
     .section-title {

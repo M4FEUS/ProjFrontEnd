@@ -14,11 +14,16 @@
 
 ## 📌 Descrição do projeto
 
-**Tutoriaê** é um site que visa **facilitar o acesso à tutoria educacional gratuita** para jovens estudantes que estão se preparando para o ENEM. Os voluntários se cadastram na plataforma e ficam disponíveis para ajudar os estudantes em diferentes matérias.
+**Tutoriaê** é um site que visa **facilitar o acesso à tutoria educacional gratuita** com o objetivo de desenvolvimento sustentável para jovens estudantes que estão se preparando para o ENEM. Os voluntários se cadastram na plataforma e ficam disponíveis para ajudar os estudantes em diferentes matérias.
+
+---
+## ODS de escolha!!
+
+> Ods 4 - Educação de qualidade
 
 ---
 ## Status do projeto
-> :construction: Projeto em construção :construction:
+> ✅ Projeto Finalizado ✅
 > https://m4feus.github.io/ProjFrontEnd/index.html
 
 ---

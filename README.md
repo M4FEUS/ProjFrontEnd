@@ -1,4 +1,4 @@
-# Tutoriê-Educação para todos
+# Tutoriaê-Educação para todos
 
 ![Badge](https://img.shields.io/badge/-HTML-df8638?logo=html5&logoColor=0d2c46&style=for-the-badge)
 ![Badge](https://img.shields.io/badge/-CSS-264de4?logo=css&logoColor=FFFFFF&style=for-the-badge)

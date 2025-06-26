@@ -38,6 +38,9 @@ function addVolunteer(event) {
     
     const name = volunteerName.value.trim();
     const email = volunteerEmail.value.trim();
+    const area = document.getElementById('volunteerArea').value;
+    const resume = document.getElementById('volunteerResume').value.trim();
+    const availability = document.getElementById('volunteerAvailability').value.trim();
     
     if (!name || !email) {
         alert('Por favor, preencha todos os campos.');
@@ -49,12 +52,15 @@ function addVolunteer(event) {
         return;
     }
     
-    const newVolunteer = {
-        id: Date.now().toString(),
-        name: name,
-        email: email,
-        date: new Date().toLocaleDateString('pt-BR')
-    };
+   const newVolunteer = {
+    id: Date.now().toString(),
+    name,
+    email,
+    area,
+    resume,
+    availability,
+    date: new Date().toLocaleDateString('pt-BR')
+};
     
     volunteers.push(newVolunteer);
     saveVolunteers();
@@ -65,6 +71,9 @@ function addVolunteer(event) {
 function clearForm() {
     document.getElementById('volunteerName').value = '';
     document.getElementById('volunteerEmail').value = '';
+    document.getElementById('volunteerArea').value = '';
+    document.getElementById('volunteerResume').value = '';
+    document.getElementById('volunteerAvailability').value = '';
 }
 
 function isValidEmail(email) {
@@ -89,16 +98,19 @@ function renderVolunteerList(volunteersToRender) {
     volunteersToRender.forEach(volunteer => {
         const listItem = document.createElement('li');
         listItem.className = 'volunteer-item';
-        listItem.innerHTML = `
-            <div class="volunteer-info">
-                <div class="volunteer-date">${volunteer.date}</div>
-                <div class="volunteer-name">${volunteer.name}</div>
-                <div class="volunteer-email">${volunteer.email}</div>
-            </div>
-            <button class="delete-btn" data-id="${volunteer.id}">
-                <i class="fas fa-trash"></i>
-            </button>
-        `;
+      listItem.innerHTML = `
+    <div class="volunteer-info">
+        <div class="volunteer-date">${volunteer.date}</div>
+        <div class="volunteer-name"><strong>Nome:</strong> ${volunteer.name}</div>
+        <div class="volunteer-email"><strong>Email:</strong> ${volunteer.email}</div>
+        <div class="volunteer-area"><strong>Área de Interesse:</strong> ${volunteer.area}</div>
+        <div class="volunteer-availability"><strong>Disponibilidade:</strong> ${volunteer.availability}</div>
+        ${volunteer.resume ? `<div class="volunteer-resume"><strong>Currículo:</strong> <a href="${volunteer.resume}" target="_blank">Ver Link</a></div>` : ""}
+    </div>
+    <button class="delete-btn" data-id="${volunteer.id}">
+        <i class="fas fa-trash"></i>
+    </button>
+`;
         volunteerList.appendChild(listItem);
     });
     

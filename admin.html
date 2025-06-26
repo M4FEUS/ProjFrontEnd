@@ -100,6 +100,34 @@
                             <label for="volunteerEmail" class="form-label">E-mail do Voluntário</label>
                             <input type="email" id="volunteerEmail" name="volunteerEmail" class="form-input" placeholder="Digite o e-mail" required>
                         </div>
+
+                        <div class="form-group">
+                             <label for="volunteerArea" class="form-label">Área de Interesse</label>
+                                <select id="volunteerArea" name="volunteerArea" class="form-input" required>
+                                   <option value="">Selecione uma área</option>
+                                   <option value="Matemática">Matemática</option>
+                                   <option value="Português">Português</option>
+                                   <option value="Redação">Redação</option>
+                                   <option value="Física">Biologia</option>
+                                   <option value="Física">Filosofia</option>
+                                   <option value="Física">Fisíca</option>
+                                   <option value="Física">Geografia</option>
+                                   <option value="Física">Historia</option>
+                                   <option value="Física">Lingua Estrangeira</option>
+                                   <option value="Física">Quimica</option>
+                                   <option value="Física">Sociologia</option>
+                                </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="volunteerResume" class="form-label">Link do Currículo (opcional)</label>
+                            <input type="url" id="volunteerResume" name="volunteerResume" class="form-input" placeholder="https://linkedin.com/in/seunome">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="volunteerAvailability" class="form-label">Disponibilidade de Horário</label>
+                            <textarea id="volunteerAvailability" name="volunteerAvailability" class="form-input" placeholder="Ex: Segunda à tarde, Fins de semana..." required></textarea>
+                        </div>
                         <div class="admin-actions">
                             <button type="submit" class="btn">Cadastrar</button>
                             <button type="button" id="clearBtn" class="btn btn-secondary">Limpar Campos</button>

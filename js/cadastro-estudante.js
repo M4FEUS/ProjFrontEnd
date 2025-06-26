@@ -24,10 +24,10 @@ function addCredenciaisCadastro(event) {
     }
 
     // verifica se o usuário aceita os termos
-    let termos = document.getElementById('termos').value;
-    if(termos !== true) {
+    let termos = document.getElementById('termos').checked;
+    if (!termos) {
         alert('Você deve concordar com os nossos Termos de Uso e Política de Privacidade.');
-        return ;
+        return;
     }
 
     // adiciona o usuário

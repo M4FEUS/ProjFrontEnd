@@ -34,6 +34,10 @@ function addCredenciaisCadastro(event) {
     let senhasIguais = (credenciaisCadastro.senhaCadastro === credenciaisCadastro.senhaConfirmadaCadastro);
     if (!senhasIguais) {
         alert('As senhas devem ser iguais!');
+
+        document.getElementById('senha').value = '';
+        document.getElementById('confirmar_senha').value = '';
+
         return ;
     }
 

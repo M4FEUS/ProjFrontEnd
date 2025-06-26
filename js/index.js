@@ -20,7 +20,8 @@ function setarCredenciais(event) {
 
     // verifica se a senha está correta
     if (usuarioEncontrado.senhaCadastro !== credenciais.senha) {
-        alert('Senha incorreta!')
+        alert('Senha incorreta!');
+        document.getElementById('senha').value = '';
         return ;
     }
 

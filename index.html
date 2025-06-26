@@ -42,7 +42,7 @@
     <main class="container">
         <div class="form-container">
             <h2 class="form-title">Login</h2>
-            <form action="home.html" method="get">
+            <form action="" method="get">
                 <div class="form-group">
                     <label for="email" class="form-label">E-mail</label>
                     <input type="email" id="email" name="email" class="form-input" placeholder="Seu e-mail" required>
@@ -58,7 +58,7 @@
                     </div>
                     <a href="#" style="color: var(--cor-primaria);">Esqueceu a senha?</a>
                 </div>
-                <button type="submit" class="btn" style="width: 100%;">Entrar</button>
+                <button onclick="setarCredenciais(event)" type="submit" class="btn" style="width: 100%;">Entrar</button>
             </form>
             <p style="text-align: center; margin-top: 1.5rem;">
                 Não tem uma conta? <a href="cadastro-estudante.html" style="color: var(--cor-primaria);">Cadastre-se</a>
@@ -103,6 +103,8 @@
             <p>© 2025 Tutoriaê - ODS 4: Educação de Qualidade</p>
         </div>
     </footer>
+
+    <script src="index.js"></script>
 </body>
 
 </html>

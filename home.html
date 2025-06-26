@@ -21,12 +21,18 @@
             <div class="logo">
                 <img src="Assets/logos/logo-tutoriae-header.png" alt="Logo Tutoriaê">
             </div>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
             <nav>
                 <ul>
                     <li><a href="home.html" class="active">Home</a></li>
                     <li><a href="nossos-cursos.html">Nossos Cursos</a></li>
                     <li><a href="quem-somos.html">Quem Somos</a></li>
                     <li><a href="quem-somos.html#contato">Entre em Contato</a></li>
+                    <li><a href="admin.html">Admin</a></li>
                 </ul>
             </nav>
 
@@ -266,6 +272,17 @@
             <p>© 2025 Tutoriaê - ODS 4: Educação de Qualidade</p>
         </div>
     </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Menu mobile toggle
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navMenu = document.querySelector('nav ul');
+        
+        menuToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+    </script>
 </body>
 
 </html>

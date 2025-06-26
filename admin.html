@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutoriaê - Área Administrativa</title>
+
+    <!-- links -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="Assets/logos/logo-tutoriae-branco.png">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .admin-actions {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .search-container {
+            display: flex;
+            gap: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .search-container input {
+            flex: 1;
+        }
+        
+        .volunteer-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .volunteer-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem;
+            margin-bottom: 0.5rem;
+            background-color: #f9f9f9;
+            border-radius: 4px;
+            border-left: 4px solid var(--cor-primaria);
+        }
+        
+        .volunteer-info {
+            flex: 1;
+        }
+        
+        .volunteer-date {
+            color: #666;
+            font-size: 0.9rem;
+            margin-bottom: 0.25rem;
+        }
+        
+        .volunteer-name {
+            font-weight: bold;
+            margin-bottom: 0.25rem;
+        }
+        
+        .volunteer-email {
+            color: var(--cor-primaria);
+        }
+        
+        .delete-btn {
+            background-color: #ff3b30;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            padding: 0.5rem;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        
+        .delete-btn:hover {
+            background-color: #d9342b;
+        }
+        
+        .no-volunteers {
+            text-align: center;
+            padding: 2rem;
+            color: #666;
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="Assets/logos/logo-tutoriae-header.png" alt="Logo Tutoriaê">
+            </div>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="nossos-cursos.html">Nossos Cursos</a></li>
+                    <li><a href="quem-somos.html">Quem Somos</a></li>
+                    <li><a href="quem-somos.html#contato">Entre em Contato</a></li>
+                    <li><a href="admin.html" class="active">Admin</a></li>
+                </ul>
+            </nav>
+
+            <div class="icons-header">
+                <div class="icons-header-search">
+                    <a href=""><i class="fa-solid fa-magnifying-glass" style="color: #FFF"></i></a>
+                    <div class="dropdown">
+                        <a class="dropdown-item" href="nossos-cursos.html#artes">Artes</a>
+                        <a class="dropdown-item" href="nossos-cursos.html#biologia">Biologia</a>
+                        <a class="dropdown-item" href="nossos-cursos.html#cursos-especiais">Cursos Especiais</a>
+                        <a class="dropdown-item" href="nossos-cursos.html#filosofia">Filosofia</a>
+                        <a class="dropdown-item" href="nossos-cursos.html#fisica">Física</a>
+                        <a class="dropdown-item" href="nossos-cursos.html#geografia">Geografia</a>
+                        <a class="dropdown-item" href="nossos-cursos.html#historia">História</a>
+                        <a class="dropdown-item" href="nossos-cursos.html#estrangeira">Língua Estrangeira</a>
+                        <a class="dropdown-item" href="nossos-cursos.html#matematica">Matemática</a>
+                        <a class="dropdown-item" href="nossos-cursos.html#portugues">Português</a>
+                        <a class="dropdown-item" href="nossos-cursos.html#quimica">Química</a>
+                        <a class="dropdown-item" href="nossos-cursos.html#redacao">Redação</a>
+                        <a class="dropdown-item" href="nossos-cursos.html#sociologia">Sociologia</a>
+                    </div>
+                </div>
+
+                <div class="icons-header-user">
+                    <a href=""><i class="fa-solid fa-user" style="color: #FFF"></i></a>
+                    <div class="dropdown">
+                        <ul>
+                            <li>Nome</li>
+                            <li>E-mail</li>
+                        </ul>
+                        <a href="index.html" style="color: red;">Sair</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Destaque Principal -->
+    <section class="highlight">
+        <h1 class="highlight-title">Área Administrativa</h1>
+        <p class="highlight-text">Cadastro e gerenciamento de voluntários para o programa Tutoriaê.</p>
+    </section>
+
+    <!-- Conteúdo Principal -->
+    <main class="container">
+        <!-- Formulário de Cadastro -->
+        <section>
+            <h2 class="section-title">Cadastro de Voluntários</h2>
+            <div class="card">
+                <div class="card-content">
+                    <form id="volunteerForm">
+                        <div class="form-group">
+                            <label for="volunteerName" class="form-label">Nome do Voluntário</label>
+                            <input type="text" id="volunteerName" name="volunteerName" class="form-input" placeholder="Digite o nome completo" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="volunteerEmail" class="form-label">E-mail do Voluntário</label>
+                            <input type="email" id="volunteerEmail" name="volunteerEmail" class="form-input" placeholder="Digite o e-mail" required>
+                        </div>
+                        <div class="admin-actions">
+                            <button type="submit" class="btn">Cadastrar</button>
+                            <button type="button" id="clearBtn" class="btn btn-secondary">Limpar Campos</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Lista de Voluntários -->
+        <section>
+            <h2 class="section-title">Voluntários Cadastrados</h2>
+            
+            <!-- Área de Pesquisa -->
+            <div class="search-container">
+                <input type="text" id="searchInput" class="form-input" placeholder="Pesquisar por nome ou e-mail">
+                <button id="searchBtn" class="btn">Pesquisar</button>
+                <button id="showAllBtn" class="btn btn-secondary">Mostrar Todos</button>
+            </div>
+            
+            <!-- Lista de Voluntários -->
+            <div class="card">
+                <div class="card-content">
+                    <ul id="volunteerList" class="volunteer-list">
+                        <!-- Lista será preenchida via JavaScript -->
+                    </ul>
+                    <div id="noVolunteers" class="no-volunteers">
+                        <p>Nenhum voluntário cadastrado.</p>
+                    </div>
+                    <div style="text-align: center; margin-top: 1.5rem;">
+                        <button id="deleteAllBtn" class="btn btn-cta">Excluir Todos</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-info">
+                <div class="footer-logo">Tutoriaê</div>
+                <p>Conectando voluntários e estudantes para um futuro melhor.</p>
+                <div class="social-icons" style="margin-top: 1rem;">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-links">
+                <h3>Cursos</h3>
+                <ul>
+                    <li><a href="#matematica">Matemática</a></li>
+                    <li><a href="#portugues">Português</a></li>
+                    <li><a href="#redacao">Redação</a></li>
+                    <li><a href="#trilha-enem">Trilha ENEM</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-links">
+                <h3>Nossos Currículos</h3>
+                <ul>
+                    <li><a href="https://liviarosaa.github.io/-Curriculo-.github.io/" target="_blank"><i class="fa-regular fa-file"></i> Lívia Rosa</a></li>
+                    <li><a href="https://m4feus.github.io" target="_blank"><i class="fa-regular fa-file"></i> Matheus Ernandes</a></li>
+                    <li><a href="https://steffaneleal.github.io/EC47C-CurriculumVitae/" target="_blank"><i class="fa-regular fa-file"></i> Stéffane Leal</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h3>Contato</h3>
+                <ul>
+                    <li><i class="fas fa-envelope"></i> contato@tutoriae.com</li>
+                    <li><i class="fas fa-phone"></i> (43) 99999-9999</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Cornélio Procópio, PR</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2025 Tutoriaê - ODS 4: Educação de Qualidade</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/admin.js"></script>
+</body>
+</html>

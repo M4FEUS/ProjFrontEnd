@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutoriaê - Login Administrativo</title>
+
+    <!-- links -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="Assets/logos/logo-tutoriae-branco.png">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .login-container {
+            max-width: 400px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background-color: var(--cor-clara);
+            border-radius: 8px;
+            box-shadow: var(--sombra-padrao);
+        }
+        
+        .login-title {
+            text-align: center;
+            color: var(--cor-primaria);
+            margin-bottom: 1.5rem;
+        }
+        
+        .login-logo {
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+        
+        .login-logo img {
+            height: 80px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="Assets/logos/logo-tutoriae-header.png" alt="Logo Tutoriaê">
+            </div>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="nossos-cursos.html">Nossos Cursos</a></li>
+                    <li><a href="quem-somos.html">Quem Somos</a></li>
+                    <li><a href="quem-somos.html#contato">Entre em Contato</a></li>
+                    <li><a href="login.html" class="active">Admin</a></li>
+                </ul>
+            </nav>
+
+            <div class="icons-header">
+                <div class="icons-header-search">
+                    <a href=""><i class="fa-solid fa-magnifying-glass" style="color: #FFF"></i></a>
+                    <div class="dropdown">
+                        <a class="dropdown-item" href="nossos-cursos.html#artes">Artes</a>
+                        <a class="dropdown-item" href="nossos-cursos.html#biologia">Biologia</a>
+                        <a class="dropdown-item" href="nossos-cursos.html#cursos-especiais">Cursos Especiais</a>
+                        <a class="dropdown-item" href="nossos-cursos.html#filosofia">Filosofia</a>
+                        <a class="dropdown-item" href="nossos-cursos.html#fisica">Física</a>
+                        <a class="dropdown-item" href="nossos-cursos.html#geografia">Geografia</a>
+                        <a class="dropdown-item" href="nossos-cursos.html#historia">História</a>
+                        <a class="dropdown-item" href="nossos-cursos.html#estrangeira">Língua Estrangeira</a>
+                        <a class="dropdown-item" href="nossos-cursos.html#matematica">Matemática</a>
+                        <a class="dropdown-item" href="nossos-cursos.html#portugues">Português</a>
+                        <a class="dropdown-item" href="nossos-cursos.html#quimica">Química</a>
+                        <a class="dropdown-item" href="nossos-cursos.html#redacao">Redação</a>
+                        <a class="dropdown-item" href="nossos-cursos.html#sociologia">Sociologia</a>
+                    </div>
+                </div>
+
+                <div class="icons-header-user">
+                    <a href=""><i class="fa-solid fa-user" style="color: #FFF"></i></a>
+                    <div class="dropdown">
+                        <ul>
+                            <li>Nome</li>
+                            <li>E-mail</li>
+                        </ul>
+                        <a href="index.html" style="color: red;">Sair</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Destaque Principal -->
+    <section class="highlight">
+        <h1 class="highlight-title">Área Administrativa</h1>
+        <p class="highlight-text">Acesso restrito para administradores do sistema.</p>
+    </section>
+
+    <!-- Conteúdo Principal -->
+    <main class="container">
+        <div class="login-container">
+            <div class="login-logo">
+                <img src="Assets/logos/logo-tutoriae.png" alt="Logo Tutoriaê">
+            </div>
+            <h2 class="login-title">Login Administrativo</h2>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="username" class="form-label">Usuário</label>
+                    <input type="text" id="username" name="username" class="form-input" placeholder="Digite seu usuário" required>
+                </div>
+                <div class="form-group">
+                    <label for="password" class="form-label">Senha</label>
+                    <input type="password" id="password" name="password" class="form-input" placeholder="Digite sua senha" required>
+                </div>
+                <div style="text-align: center; margin-top: 1.5rem;">
+                    <button type="submit" class="btn">Entrar</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-info">
+                <div class="footer-logo">Tutoriaê</div>
+                <p>Conectando voluntários e estudantes para um futuro melhor.</p>
+                <div class="social-icons" style="margin-top: 1rem;">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-links">
+                <h3>Cursos</h3>
+                <ul>
+                    <li><a href="#matematica">Matemática</a></li>
+                    <li><a href="#portugues">Português</a></li>
+                    <li><a href="#redacao">Redação</a></li>
+                    <li><a href="#trilha-enem">Trilha ENEM</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-links">
+                <h3>Nossos Currículos</h3>
+                <ul>
+                    <li><a href="https://liviarosaa.github.io/-Curriculo-.github.io/" target="_blank"><i class="fa-regular fa-file"></i> Lívia Rosa</a></li>
+                    <li><a href="https://m4feus.github.io" target="_blank"><i class="fa-regular fa-file"></i> Matheus Ernandes</a></li>
+                    <li><a href="https://steffaneleal.github.io/EC47C-CurriculumVitae/" target="_blank"><i class="fa-regular fa-file"></i> Stéffane Leal</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h3>Contato</h3>
+                <ul>
+                    <li><i class="fas fa-envelope"></i> contato@tutoriae.com</li>
+                    <li><i class="fas fa-phone"></i> (43) 99999-9999</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Cornélio Procópio, PR</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2025 Tutoriaê - ODS 4: Educação de Qualidade</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/login.js"></script>
+</body>
+</html>

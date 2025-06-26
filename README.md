@@ -2,7 +2,7 @@
 
 ![Badge](https://img.shields.io/badge/-HTML-df8638?logo=html5&logoColor=0d2c46&style=for-the-badge)
 ![Badge](https://img.shields.io/badge/-CSS-264de4?logo=css&logoColor=FFFFFF&style=for-the-badge)
-![Badge](https://img.shields.io/badge/-JS-Black?logo=js&logoColor=yellow&style=for-the-badge)
+![Badge](https://img.shields.io/badge/-JS-Black?logo-javascript&logoColor=f5f5f5&style=for-the-badge)
 
 # Índice 
 * [Descrição do Projeto](#descrição-do-projeto)

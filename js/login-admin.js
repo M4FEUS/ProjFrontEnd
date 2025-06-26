@@ -23,14 +23,14 @@ function checkLogin(event) {
 // Função para verificar se o usuário está logado
 function checkAdminAccess() {
     if (!sessionStorage.getItem('adminLoggedIn')) {
-        window.location.href = 'login.html';
+        window.location.href = 'login-admin.html';
     }
 }
 
 // Função para logout
 function logout() {
     sessionStorage.removeItem('adminLoggedIn');
-    window.location.href = 'login.html';
+    window.location.href = 'login-admin.html';
 }
 
 // Inicialização

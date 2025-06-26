@@ -1,6 +1,6 @@
 // função para setar as credenciais
 
-var usuariosLista = [];
+var usuariosLista = JSON.parse(localStorage.getItem('usuariosLista')) || [];
 var count = 1;
 
 function addCredenciaisCadastro(event) {
@@ -35,4 +35,11 @@ function addCredenciaisCadastro(event) {
 
     let usuarioNovo = localStorage.setItem('usuariosLista', JSON.stringify(usuariosLista));
     console.log(usuarioNovo);
+
+    alert('Cadastro realizado com sucesso!');
+    window.location.href = 'index.html';
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById('cadastroForm').addEventListener('submit', addCredenciaisCadastro);
+});

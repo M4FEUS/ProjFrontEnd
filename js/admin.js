@@ -5,7 +5,7 @@ let volunteers = [];
 // Verificar acesso ao admin
 function checkAdminAccess() {
     if (!sessionStorage.getItem('adminLoggedIn')) {
-        window.location.href = 'login.html';
+        window.location.href = 'login-admin.html';
     } else {
         // Exibe o conteúdo do body se o admin estiver logado
         document.body.style.display = '';
@@ -15,7 +15,7 @@ function checkAdminAccess() {
 // Função para logout
 function logout() {
     sessionStorage.removeItem('adminLoggedIn');
-    window.location.href = 'login.html';
+    window.location.href = 'login-admin.html';
 }
 
 // Funções de gerenciamento do Local Storage

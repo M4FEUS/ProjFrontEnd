@@ -7,87 +7,14 @@
 
     <!-- links -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/admin.css">
     <link rel="shortcut icon" href="Assets/logos/logo-tutoriae-branco.png">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <style>
-        .admin-actions {
-            display: flex;
-            gap: 1rem;
-            margin-bottom: 1.5rem;
-        }
-        
-        .search-container {
-            display: flex;
-            gap: 0.5rem;
-            margin-bottom: 1.5rem;
-        }
-        
-        .search-container input {
-            flex: 1;
-        }
-        
-        .volunteer-list {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-        }
-        
-        .volunteer-item {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 1rem;
-            margin-bottom: 0.5rem;
-            background-color: #f9f9f9;
-            border-radius: 4px;
-            border-left: 4px solid var(--cor-primaria);
-        }
-        
-        .volunteer-info {
-            flex: 1;
-        }
-        
-        .volunteer-date {
-            color: #666;
-            font-size: 0.9rem;
-            margin-bottom: 0.25rem;
-        }
-        
-        .volunteer-name {
-            font-weight: bold;
-            margin-bottom: 0.25rem;
-        }
-        
-        .volunteer-email {
-            color: var(--cor-primaria);
-        }
-        
-        .delete-btn {
-            background-color: #ff3b30;
-            color: white;
-            border: none;
-            border-radius: 4px;
-            padding: 0.5rem;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
-        
-        .delete-btn:hover {
-            background-color: #d9342b;
-        }
-        
-        .no-volunteers {
-            text-align: center;
-            padding: 2rem;
-            color: #666;
-            font-style: italic;
-        }
-    </style>
 </head>
 
-<body>
+<body style="display:none">
     <!-- Cabeçalho -->
     <header>
         <div class="header-container">
@@ -105,7 +32,7 @@
                     <li><a href="nossos-cursos.html">Nossos Cursos</a></li>
                     <li><a href="quem-somos.html">Quem Somos</a></li>
                     <li><a href="quem-somos.html#contato">Entre em Contato</a></li>
-                    <li><a href="admin.html" class="active">Admin</a></li>
+                    <li><a href="login.html" class="active">Admin</a></li>
                 </ul>
             </nav>
 
@@ -151,6 +78,14 @@
 
     <!-- Conteúdo Principal -->
     <main class="container">
+        <!-- Cabeçalho Admin -->
+        <div class="admin-header">
+            <h2>Bem-vindo, Administrador</h2>
+            <button id="logoutBtn" class="btn btn-secondary">
+                <i class="fas fa-sign-out-alt"></i> Sair
+            </button>
+        </div>
+        
         <!-- Formulário de Cadastro -->
         <section>
             <h2 class="section-title">Cadastro de Voluntários</h2>

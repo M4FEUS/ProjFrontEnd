@@ -2,6 +2,22 @@
 const LOCAL_STORAGE_KEY = 'tutoriae_volunteers';
 let volunteers = [];
 
+// Verificar acesso ao admin
+function checkAdminAccess() {
+    if (!sessionStorage.getItem('adminLoggedIn')) {
+        window.location.href = 'login.html';
+    } else {
+        // Exibe o conteúdo do body se o admin estiver logado
+        document.body.style.display = '';
+    }
+}
+
+// Função para logout
+function logout() {
+    sessionStorage.removeItem('adminLoggedIn');
+    window.location.href = 'login.html';
+}
+
 // Funções de gerenciamento do Local Storage
 function loadVolunteers() {
     const storedVolunteers = localStorage.getItem(LOCAL_STORAGE_KEY);
@@ -158,6 +174,9 @@ function initMobileMenu() {
 
 // Inicialização
 document.addEventListener('DOMContentLoaded', () => {
+    // Verificar acesso
+    checkAdminAccess();
+    
     // Inicializar menu mobile
     initMobileMenu();
     
@@ -170,6 +189,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const deleteAllBtn = document.getElementById('deleteAllBtn');
     const searchBtn = document.getElementById('searchBtn');
     const showAllBtn = document.getElementById('showAllBtn');
+    const logoutBtn = document.getElementById('logoutBtn');
     
     if (volunteerForm) {
         volunteerForm.addEventListener('submit', addVolunteer);
@@ -189,5 +209,9 @@ document.addEventListener('DOMContentLoaded', () => {
     
     if (showAllBtn) {
         showAllBtn.addEventListener('click', showAllVolunteers);
+    }
+    
+    if (logoutBtn) {
+        logoutBtn.addEventListener('click', logout);
     }
 });

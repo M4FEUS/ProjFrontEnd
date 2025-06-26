@@ -15,6 +15,8 @@ function setarCredenciais(event) {
 
     if (!usuarioEncontrado) {
         alert('E-mail não cadastrado');
+        document.getElementById('email').value = '';
+        document.getElementById('senha').value = '';
         return ;
     }
 

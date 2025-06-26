@@ -1,5 +1,5 @@
 // função para salvar as credenciais do usuário
-function setarCredenciais(event, usuariosSalvos, senhasSalvas) {
+function setarCredenciais(event) {
     event.preventDefault();
 
     let credenciais = {
@@ -7,13 +7,29 @@ function setarCredenciais(event, usuariosSalvos, senhasSalvas) {
         senha: document.getElementById('senha').value
     }
 
-    // verifica se já existe um usuário com o e-mail
+    // recupera a lista de usuários do localStorage
+    let usuariosLista = JSON.parse(localStorage.getItem('usuariosLista')) || [];
     
+    // verifica se já existe um usuário com o e-mail
+    let usuarioEncontrado = usuariosLista.find(usuario => usuario.emailCadastro === credenciais.email);
+
+    if (!usuarioEncontrado) {
+        alert('E-mail não cadastrado');
+        return ;
+    }
+
+    // verifica se a senha está correta
+    if (usuarioEncontrado.senhaCadastro !== credenciais.senha) {
+        alert('Senha incorreta!')
+        return ;
+    }
+
+    // armazena o id do usuário logado no localStorage
+    localStorage.setItem('usuarioLogadoId', usuarioEncontrado.id);
+    window.dispatchEvent(new Event('usuarioLogado'));
+    window.location.href = 'home.html';
 }
 
-function getUsuarios() {
-    let usuariosSalvos = localStorage.getItem('emailCadastro');
-    let senhasSalvas = localStorage.getItem('senhaCadastro');
-
-    return usuariosSalvos, senhasSalvas;
-}
+document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById('loginForm').addEventListener('submit', setarCredenciais);
+});
